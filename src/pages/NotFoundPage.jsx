@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { motion } from "framer-motion"; // Opcional, si usas Framer Motion
 import { useState, useEffect } from "react";
 
 const NotFoundPage = () => {
@@ -120,7 +119,7 @@ const NotFoundPage = () => {
             </Link>
           </div>
           
-          {/* Búsqueda (opcional) */}
+          {/* Búsqueda */}
           <div className="mt-12 max-w-md mx-auto">
             <div className="relative">
               <input
@@ -162,28 +161,6 @@ const NotFoundPage = () => {
       
       {/* Efectos decorativos */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/30 to-transparent"></div>
-      
-      {/* Animación CSS para las partículas */}
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0) translateX(0);
-            opacity: 0.3;
-          }
-          25% {
-            transform: translateY(-10px) translateX(5px);
-            opacity: 0.5;
-          }
-          50% {
-            transform: translateY(5px) translateX(-5px);
-            opacity: 0.7;
-          }
-          75% {
-            transform: translateY(-5px) translateX(10px);
-            opacity: 0.5;
-          }
-        }
-      `}</style>
     </div>
   );
 };

@@ -16,17 +16,17 @@
     "Networks": "MY SOCIAL NETWORKS"
   },
   "Menu": {
-    "home":  "HOME",
+    "home": "HOME",
     "about": "ABOUT ME",
     "projects": "SERVICES",
     "contact": "CONTACT"
   },
   "Btn-home": {
-    "btn-projects":  "see my services",
+    "btn-projects": "see my services",
     "btn-about": "about me"
   },
   "About-page": {
-    "title":  "ABOUT ME",
+    "title": "ABOUT ME",
     "description": "After a solid career in the automotive industry as a process engineer and supervisor, I decided to channel my passion for innovation and technology as a developer. My background is Juan Ramón Salas, and my experience in workflow optimization gives me a unique perspective for creating applications and websites that not only work, but also solve real problems.",
     "label-1": "Frontend Development",
     "label-2": "Backend Development",
@@ -35,134 +35,189 @@
     "button-1": "Contact me",
     "button-2": "Download CV"
   },
-
-
-
-
-
-  "Pages": {
+  "Projects-page": {
+    "title": "MY SERVICES",
+    "subtitle": "Customized digital solutions to boost your business"
+  },
+  "Services": {
     "website": {
       "title": "🌐 Corporate Websites",
-      "heroTitle": "Websites that Convert",
-      "heroDescription": "Professional websites for companies needing solid digital presence with detailed service information, corporate values, and direct contact.",
-      "featuresTitle": "Premium Features",
-      "featuresSubtitle": "Everything you need for high-level corporate digital presence",
-      "processTitle": "Our Development Process",
-      "processSubtitle": "A structured approach to ensure your project's success",
-      "ctaTitle": "Ready to Elevate Your Digital Presence?",
-      "ctaDescription": "Transform your company's image with a corporate website that truly represents your value"
+      "description": "Professional websites for companies needing solid digital presence with detailed service information, corporate values, and direct contact.",
+      "features": [
+        "Professional corporate design",
+        "Multi-language (Spanish/English)",
+        "Automatic light/dark theme",
+        "Google-optimized SEO",
+        "Smart contact forms",
+        "Google Maps integration"
+      ]
     },
     "landing": {
       "title": "🚀 High-Impact Landing Pages",
-      "heroTitle": "Landing Pages that Convert",
-      "heroDescription": "Landing pages specifically designed to convert visitors into customers. Perfect for entrepreneurs and small businesses seeking immediate results.",
-      "featuresTitle": "Everything You Need to Sell More",
-      "featuresSubtitle": "Features specifically designed to maximize your conversions",
-      "ctaTitle": "Ready to Multiply Your Sales?",
-      "ctaDescription": "Your competition is already using effective landing pages. Don't get left behind."
+      "description": "Landing pages designed to convert visitors into customers. Perfect for entrepreneurs and small businesses.",
+      "features": [
+        "Dashboard to manage offers",
+        "Secure authentication system",
+        "Maximum conversion optimization",
+        "Ultra-fast loading (< 2s)",
+        "Real-time conversion statistics",
+        "Easy content management (basic CMS)"
+      ]
+    },
+    "cards": {
+      "title": "💳 Interactive Digital Cards",
+      "description": "Your professional presentation in digital format. Share your contact information in a modern and innovative way.",
+      "features": [
+        "Fluid and attractive animations",
+        "Custom QR code",
+        "One-click sharing",
+        "100% responsive design",
+        "View statistics",
+        "Real-time updates"
+      ]
     },
     "email": {
       "title": "📧 Email Marketing Campaigns",
-      "heroTitle": "Email Marketing that Connects",
-      "heroDescription": "Email campaigns that not only reach the inbox, but capture attention, generate trust, and increase conversions.",
-      "featuresTitle": "Intelligent Email Automation",
-      "featuresSubtitle": "Beyond mass sending: personalized strategies that build relationships",
-      "ctaTitle": "Turn Subscribers into Loyal Customers",
-      "ctaDescription": "Email marketing has the best ROI of all digital strategies. Are you taking full advantage of its potential?"
+      "description": "Email campaigns that capture attention and generate conversions. Intelligent communication automation.",
+      "features": [
+        "Tested responsive templates",
+        "Email flow automation",
+        "Audience segmentation",
+        "Detailed open/click analysis",
+        "CRM integration",
+        "Built-in A/B testing"
+      ]
     },
     "automation": {
       "title": "📊 Management & Automation Apps",
-      "heroTitle": "Digitize Your Business",
-      "heroDescription": "Custom applications that eliminate paperwork, automate processes, and give you total control over your business with intuitive dashboards.",
-      "featuresTitle": "Enterprise-Level Features",
-      "featuresSubtitle": "Everything you need to operate efficiently in the digital age",
-      "useCasesTitle": "Solutions for All Types of Businesses",
-      "ctaTitle": "Ready for Digital Transformation?",
-      "ctaDescription": "Leave manual processes behind and take your business to the next level with intelligent automation"
-    },
-    "notfound": {
-      "title": "404 - Page not found",
-      "mainTitle": "Oops! Page not found",
-      "description": "The page you're looking for might have been removed, had its name changed, or is temporarily unavailable.",
-      "homeSuggestion": "Go to Home",
-      "homeDescription": "Return to the main page",
-      "contactSuggestion": "Contact Support",
-      "contactDescription": "Report this issue",
-      "backSuggestion": "Go Back",
-      "backDescription": "Return to the previous page",
-      "searchPlaceholder": "What are you looking for?",
-      "quickLinks": "Links that might interest you:",
-      "buttons": {
-        "home": "Go to Home",
-        "back": "Go Back",
-        "contact": "Contact",
-        "search": "Search"
-      }
+      "description": "Digitize and automate your company processes. Eliminate paperwork and gain total control with intuitive dashboards.",
+      "features": [
+        "Dashboard with interactive charts",
+        "Custom automated reports",
+        "Automated workflows",
+        "Real-time notifications",
+        "Role-based permission control",
+        "Automatic data backup"
+      ]
     }
   },
-  "Common-1": {
-    "stats": {
-      "leadsIncrease": "Increase in leads",
-      "loadTime": "Load time",
-      "responsive": "Responsive",
-      "support": "Technical support",
-      "deliveryRate": "Delivery rate",
-      "openRate": "Average open rate",
-      "clickRate": "Click rate",
-      "conversionRate": "Average conversion",
-      "errorReduction": "Error reduction",
-      "timeSaved": "Time saved",
-      "availability": "Availability",
-      "noPaperwork": "Physical paperwork"
+  "Tech": {
+    "react": "React.js",
+    "next": "Next.js",
+    "tailwind": "Tailwind CSS",
+    "chartjs": "Chart.js",
+    "neon": "Neon DB",
+    "postgresql": "PostgreSQL",
+    "node": "Node.js",
+    "api": "API Integration",
+    "html5": "HTML5",
+    "css3": "CSS3",
+    "javascript": "JavaScript",
+    "animations": "CSS/JS Animations",
+    "cloudinary": "Cloudinary",
+    "clerk": "Clerk Auth",
+    "resend": "Resend",
+    "n8n": "n8n",
+    "reactEmail": "React Email",
+    "qr": "QR Generator",
+    "seo": "SEO",
+    "seoAdvanced": "Advanced SEO",
+    "responsive": "Responsive",
+    "responsiveDesign": "Responsive Design",
+    "i18n": "i18n",
+    "darkMode": "Dark Mode",
+    "analytics": "Analytics"
+  },
+  "Buttons": {
+    "viewDetails": "View Details",
+    "seeDemo": "See Demo",
+    "contact": "Contact",
+    "learnMore": "Learn More"
+  },
+  "Common": {
+    "featuresTitle": "Main Features",
+    "technologies": "Technologies Used",
+    "viewProject": "View Project",
+    "available": "Available",
+    "inDevelopment": "In Development"
+  },
+  "Projects-button": {
+    "title": "PROJECTS"
+  },
+  "About-button": {
+    "title": "ABOUT ME"
+  },
+  "Contact-page": {
+    "title": "Contact me",
+    "subtitle": "Do you have a project in mind? Let's talk and make it happen",
+    "alternative-title": "Other contact methods",
+    "Form": {
+      "name": "NAME",
+      "email": "EMAIL",
+      "subject": "SUBJECT",
+      "message": "MESSAGE",
+      "send": "SEND",
+      "your-name": "your name",
+      "your-email": "your email",
+      "your-subject": "your subject",
+      "your-message": "your message",
+      "sending": "Sending..."
     },
-    "buttons": {
-      "getQuote": "Request Quote",
-      "viewFeatures": "View Features",
-      "createProject": "Create my Landing Page",
-      "seeExamples": "See Success Cases",
-      "boostMarketing": "Boost my Email Marketing",
-      "viewCampaigns": "View Campaign Examples",
-      "automateBusiness": "Automate my Business",
-      "seeDemo": "Interactive Demo",
-      "startProject": "Start Project",
-      "freeConsultation": "Free Consultation",
-      "personalizedStrategy": "Personalized Strategy",
-      "freeAudit": "Free Audit",
-      "processAnalysis": "Free Process Analysis",
-      "viewPlans": "View Plans and Prices"
+    "WhatsApp": {
+      "title": "Direct Chat",
+      "line-1": "Or if you prefer, send me a message on WhatsApp.",
+      "button": "Open WhatsApp"
     },
-    "badges": {
-      "corporateSolution": "CORPORATE SOLUTION",
-      "forEntrepreneurs": "FOR ENTREPRENEURS",
-      "digitalMarketing": "DIGITAL MARKETING",
-      "businessAutomation": "BUSINESS AUTOMATION"
+    "Email-direct": {
+      "title": "Direct Email",
+      "line-1": "Send me an email directly",
+      "button": "ramon.salaspi1.1@gmail.com"
+    }
+  },
+  "Web-site-page": {
+    "header": {
+      "little-title": "🌐 Corporate Websites",
+      "title": "Websites that Convert",
+      "description": "Professional websites for companies needing solid digital presence with detailed service information, corporate values, and direct contact.",
+      "text-1": "Your Business in the Digital World",
+      "text-2": "Professional Online Presence",
+      "button-1": "Request a Quote",
+      "button-2": "View Features",
+      "label-1": "Increase in Leads",
+      "label-2": "Load Time",
+      "label-3": "Responsive",
+      "label-4": "Technical Support"
     },
-    "benefits": {
-      "salesIncrease": "Increase sales up to 300%",
-      "costReduction": "Reduce marketing costs",
-      "audienceTargeting": "Precise audience targeting",
-      "clearMetrics": "Clear ROI metrics"
+    "functions-section": {
+      "title": "Premium Features",
+      "description": "Everything you need for high-level corporate digital presence",
+      "card-1": "A modern image that reflects the seriousness and reliability of your company.",
+      "card-2": "Expand your market by attracting international clients.",
+      "card-3": "Optimal visual experience tailored to user preferences.",
+      "card-4": "Appear at the top of search results.",
+      "card-5": "Automatically capture qualified leads.",
+      "card-6": "Customers can easily find you."
     },
-    "guarantees": {
-      "delivery": "Delivery in 7-10 days",
-      "mobileFirst": "Mobile-first design",
-      "conversionGuarantee": "Conversion guarantee",
-      "roi": "Average ROI 42:1",
-      "automation": "24/7 Automation",
-      "customDesign": "Custom design",
-      "implementation": "Implementation in 4-6 weeks",
-      "prioritySupport": "Priority support",
-      "freeUpdates": "Free updates for 1 year"
+    "development-section": {
+      "title": "Our Development Process",
+      "description": "A structured approach to ensure your project's success.",
+      "card-1-title": "Analysis and Strategy",
+      "card-1-description": "We understand your goals and audience to create the perfect strategy.",
+      "card-2-title": "Custom Design",
+      "card-2-description": "We create a unique design that reflects your brand identity.",
+      "card-3-title": "Technical Development",
+      "card-3-description": "We implement the best technologies for optimal performance.",
+      "card-4-title": "SEO Optimization",
+      "card-4-description": "We prepare your site to stand out in search engines",
+      "card-5-title": "Launch and Support",
+      "card-5-description": "We deploy your site and offer ongoing maintenance."
+    },
+    "contact-section": {
+      "title": "Ready to Elevate Your Digital Presence?",
+      "text-1": "Transform your company's image with a corporate website that truly represents your value.",
+      "button-1": "Contact Us Now",
+      "button-2": "View Other Services",
+      "text-2": "⚡ Response in less than 24 hours • 📞 Free consultation • 💼 Personalized quote"
     }
   }
-
-
-
-
-  
-    
-  
-
-
-
 }

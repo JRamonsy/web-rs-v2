@@ -35,7 +35,7 @@
     "button-1": "Contáctame",
     "button-2": "Descargar CV"
   },
-  "Projects-page": {
+"Projects-page": {
     "title": "MIS SERVICIOS",
     "subtitle": "Soluciones digitales personalizadas para potenciar tu negocio"
   },
@@ -174,120 +174,50 @@
       "button": "ramon.salaspi1.1@gmail.com"
     }
   },
-
-  "Pages": {
-      "website": {
-        "title": "🌐 Sitios Web Corporativos",
-        "heroTitle": "Sitios Web que Convierten",
-        "heroDescription": "Sitios web profesionales para empresas que necesitan presencia digital sólida con información detallada de servicios, valores corporativos y contacto directo.",
-        "featuresTitle": "Características Premium",
-        "featuresSubtitle": "Todo lo que necesitas para una presencia digital corporativa de alto nivel",
-        "processTitle": "Nuestro Proceso de Desarrollo",
-        "processSubtitle": "Un enfoque estructurado para garantizar el éxito de tu proyecto",
-        "ctaTitle": "¿Listo para Elevar tu Presencia Digital?",
-        "ctaDescription": "Transforma la imagen de tu empresa con un sitio web corporativo que realmente represente tu valor"
-      },
-      "landing": {
-        "title": "🚀 Landing Pages de Alto Impacto",
-        "heroTitle": "Landing Pages que Convierten",
-        "heroDescription": "Páginas de aterrizaje diseñadas específicamente para convertir visitantes en clientes. Perfectas para emprendedores y pequeños negocios que buscan resultados inmediatos.",
-        "featuresTitle": "Todo lo que Necesitas para Vender Más",
-        "featuresSubtitle": "Características diseñadas específicamente para maximizar tus conversiones",
-        "ctaTitle": "¿Listo para Multiplicar tus Ventas?",
-        "ctaDescription": "Tu competencia ya está usando landing pages efectivas. No te quedes atrás."
-      },
-      "email": {
-        "title": "📧 Campañas de Email Marketing",
-        "heroTitle": "Email Marketing que Conecta",
-        "heroDescription": "Campañas de correo electrónico que no solo llegan a la bandeja de entrada, sino que capturan atención, generan confianza y aumentan conversiones.",
-        "featuresTitle": "Automatización Inteligente de Email",
-        "featuresSubtitle": "Más allá del envío masivo: estrategias personalizadas que construyen relaciones",
-        "ctaTitle": "Convierte Suscriptores en Clientes Leales",
-        "ctaDescription": "El email marketing tiene el mejor ROI de todas las estrategias digitales. ¿Estás aprovechando todo su potencial?"
-      },
-      "automation": {
-        "title": "📊 Apps de Gestión y Automatización",
-        "heroTitle": "Digitaliza tu Empresa",
-        "heroDescription": "Aplicaciones personalizadas que eliminan el papeleo, automatizan procesos y te dan control total sobre tu negocio con dashboards intuitivos.",
-        "featuresTitle": "Características de Nivel Empresarial",
-        "featuresSubtitle": "Todo lo que necesitas para operar eficientemente en la era digital",
-        "useCasesTitle": "Soluciones para Todo Tipo de Negocios",
-        "ctaTitle": "¿Listo para la Transformación Digital?",
-        "ctaDescription": "Deja atrás los procesos manuales y lleva tu empresa al siguiente nivel con automatización inteligente"
-      },
-      "notfound": {
-        "title": "404 - Página no encontrada",
-        "mainTitle": "¡Ups! Página no encontrada",
-        "description": "La página que estás buscando podría haber sido eliminada, haber cambiado de nombre o no estar disponible temporalmente.",
-        "homeSuggestion": "Ir al Inicio",
-        "homeDescription": "Regresa a la página principal",
-        "contactSuggestion": "Contactar Soporte",
-        "contactDescription": "Reporta este problema",
-        "backSuggestion": "Volver Atrás",
-        "backDescription": "Regresa a la página anterior",
-        "searchPlaceholder": "¿Qué estás buscando?",
-        "quickLinks": "Enlaces que podrían interesarte:",
-        "buttons": {
-          "home": "Ir al Inicio",
-          "back": "Volver Atrás",
-          "contact": "Contactar",
-          "search": "Buscar"
-        }
-      }
+  "Web-site-page": {
+    "header": {
+      "little-title": "🌐 SitiosWeb Corporativos",
+      "title": "Sitios web que convierten",
+      "description": "Sitios web profesionales para empresas que necesitan una sólida presencia digital con información detallada de servicios, valores corporativos y contacto directo..",
+      "text-1": "Tu Empresa en Digital",
+      "text-2": "Presencia profesional en línea",
+      "button-1": "Solicitar Cotización",
+      "button-2": "Ver características",
+      "label-1": "Aumento en leads",
+      "label-2": "Tiempo de carga",
+      "label-3": "Responsive",
+      "label-4": "Soporte técnico"
     },
-    "Common-2": {
-      "stats": {
-        "leadsIncrease": "Aumento en leads",
-        "loadTime": "Tiempo de carga",
-        "responsive": "Responsive",
-        "support": "Soporte técnico",
-        "deliveryRate": "Tasa de entrega",
-        "openRate": "Apertura promedio",
-        "clickRate": "Tasa de clics",
-        "conversionRate": "Conversión promedio",
-        "errorReduction": "Reducción de errores",
-        "timeSaved": "Tiempo ahorrado",
-        "availability": "Disponibilidad",
-        "noPaperwork": "Papeleo físico"
-      },
-      "buttons": {
-        "getQuote": "Solicitar Cotización",
-        "viewFeatures": "Ver Características",
-        "createProject": "Crear mi Landing Page",
-        "seeExamples": "Ver Casos de Éxito",
-        "boostMarketing": "Potenciar mi Email Marketing",
-        "viewCampaigns": "Ver Ejemplos de Campañas",
-        "automateBusiness": "Automatizar mi Negocio",
-        "seeDemo": "Demo Interactiva",
-        "startProject": "Empezar Proyecto",
-        "freeConsultation": "Consulta Gratuita",
-        "personalizedStrategy": "Estrategia Personalizada",
-        "freeAudit": "Auditoría Gratuita",
-        "processAnalysis": "Análisis de Procesos Gratuito",
-        "viewPlans": "Ver Planes y Precios"
-      },
-      "badges": {
-        "corporateSolution": "SOLUCIÓN CORPORATIVA",
-        "forEntrepreneurs": "PARA EMPRENDEDORES",
-        "digitalMarketing": "MARKETING DIGITAL",
-        "businessAutomation": "AUTOMATIZACIÓN EMPRESARIAL"
-      },
-      "benefits": {
-        "salesIncrease": "Aumenta ventas hasta un 300%",
-        "costReduction": "Reduce costos de marketing",
-        "audienceTargeting": "Segmentación precisa de audiencia",
-        "clearMetrics": "Métricas claras de ROI"
-      },
-      "guarantees": {
-        "delivery": "Entrega en 7-10 días",
-        "mobileFirst": "Diseño móvil primero",
-        "conversionGuarantee": "Garantía de conversión",
-        "roi": "ROI promedio 42:1",
-        "automation": "Automatización 24/7",
-        "customDesign": "Diseño personalizado",
-        "implementation": "Implementación en 4-6 semanas",
-        "prioritySupport": "Soporte prioritario",
-        "freeUpdates": "Actualizaciones gratuitas por 1 año"
-      }
+    "functions-section": {
+      "title": "Funciones Premium",
+      "description": "Todo lo que necesitas para una presencia digital corporativa de alto nivel",
+      "card-1": "Imagen moderna que refleja la seriedad y confiabilidad de tu empresa.",
+      "card-2": "Expande tu mercado atrayendo clientes internacionales",
+      "card-3": "Experiencia visual óptima según las preferencias del usuario",
+      "card-4": "Aparece en los primeros resultados de búsqueda.",
+      "card-5": "Captura leads calificados automáticamente",
+      "card-6": "Clientes te encuentran fácilmente"
+    },
+    "development-section": {
+      "title": "Nuestro proceso de desarrollo",
+      "description": "Un enfoque estructurado para garantizar el éxito de su proyecto",
+      "card-1-title": "Análisis y Estrategia",
+      "card-1-description": "Entendemos tus objetivos y audiencia para crear la estrategia perfecta.",
+      "card-2-title": "Diseño Personalizado",
+      "card-2-description": "Creamos un diseño único que refleje la identidad de tu marca.",
+      "card-3-title": "Desarrollo Técnico",
+      "card-3-description": "Implementamos las mejores tecnologías para rendimiento óptimo.",
+      "card-4-title": "Optimización SEO",
+      "card-4-description": "Preparamos tu sitio para destacar en motores de búsqueda.",
+      "card-5-title": "Lanzamiento y Soporte",
+      "card-5-description": "Desplegamos tu sitio y ofrecemos mantenimiento continuo."
+    },
+    "contact-section": {
+      "title": "¿Listo para Elevar tu Presencia Digital?",
+      "text-1": "Transforma la imagen de tu empresa con un sitio web corporativo que realmente representa tu valor.",
+      "button-1": "Contactar Ahora",
+      "button-2": "Ver Otros Servicios",
+      "text-2": "⚡ Respuesta en menos de 24 horas • 📞 Consulta gratuita • 💼 Cotización personalizada"
     }
+  }
 }

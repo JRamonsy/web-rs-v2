@@ -35,32 +35,32 @@ const WebSitePage = () => {
     {
       icon: "🌍",
       title: t("Services.website.features.0", "Diseño corporativo profesional"),
-      description: "Imagen moderna que refleja la seriedad y confiabilidad de tu empresa"
+      description: t("Web-site-page.functions-section.card-1")
     },
     {
       icon: "🗣️",
       title: t("Services.website.features.1", "Multi-idioma (Español/Inglés)"),
-      description: "Expande tu mercado atrayendo clientes internacionales"
+      description: t("Web-site-page.functions-section.card-2")
     },
     {
       icon: "🌙",
       title: t("Services.website.features.2", "Tema claro/oscuro automático"),
-      description: "Experiencia visual óptima según las preferencias del usuario"
+      description: t("Web-site-page.functions-section.card-3")
     },
     {
       icon: "🔍",
       title: t("Services.website.features.3", "SEO optimizado para Google"),
-      description: "Aparece en los primeros resultados de búsqueda"
+      description: t("Web-site-page.functions-section.card-4")
     },
     {
       icon: "📞",
       title: t("Services.website.features.4", "Formularios de contacto inteligentes"),
-      description: "Captura leads calificados automáticamente"
+      description: t("Web-site-page.functions-section.card-5")
     },
     {
       icon: "📍",
       title: t("Services.website.features.5", "Integración con Google Maps"),
-      description: "Clientes te encuentran fácilmente"
+      description: t("Web-site-page.functions-section.card-6")
     }
   ];
 
@@ -68,28 +68,28 @@ const WebSitePage = () => {
   const developmentProcess = [
     {
       step: "1",
-      title: "Análisis y Estrategia",
-      description: "Entendemos tus objetivos y audiencia para crear la estrategia perfecta"
+      title: t("Web-site-page.development-section.card-1-title"),
+      description: t("Web-site-page.development-section.card-1-description")
     },
     {
       step: "2",
-      title: "Diseño Personalizado",
-      description: "Creamos un diseño único que refleje la identidad de tu marca"
+      title: t("Web-site-page.development-section.card-2-title"),
+      description: t("Web-site-page.development-section.card-2-description")
     },
     {
       step: "3",
-      title: "Desarrollo Técnico",
-      description: "Implementamos las mejores tecnologías para rendimiento óptimo"
+      title: t("Web-site-page.development-section.card-3-title"),
+      description: t("Web-site-page.development-section.card-3-description")
     },
     {
       step: "4",
-      title: "Optimización SEO",
-      description: "Preparamos tu sitio para destacar en motores de búsqueda"
+      title: t("Web-site-page.development-section.card-4-title"),
+      description: t("Web-site-page.development-section.card-4-description")
     },
     {
       step: "5",
-      title: "Lanzamiento y Soporte",
-      description: "Desplegamos tu sitio y ofrecemos mantenimiento continuo"
+      title: t("Web-site-page.development-section.card-5-title"),
+      description: t("Web-site-page.development-section.card-5-description")
     }
   ];
 
@@ -108,17 +108,17 @@ const WebSitePage = () => {
             {/* Contenido Principal */}
             <div className="lg:w-1/2">
               <span className="inline-block px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 font-semibold text-sm mb-6">
-               {t("Pages.website.title")}
+               {t("Web-site-page.header.little-title")}
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
-                  {t("Pages.website.heroTitle")}
+                  {t("Web-site-page.header.title")}
                 </span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                {t("Pages.website.heroDescription")}
+                {t("Web-site-page.header.description")}
               </p>
               
               <div className="flex flex-wrap gap-4 mb-10">
@@ -126,7 +126,7 @@ const WebSitePage = () => {
                   to="/contact"
                   className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg flex items-center gap-3"
                 >
-                  <span>Solicitar Cotización</span>
+                  <span>{t("Web-site-page.header.button-1")}</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
@@ -136,7 +136,7 @@ const WebSitePage = () => {
                   href="#features"
                   className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-purple-500 dark:border-purple-400 text-purple-600 dark:text-purple-300 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center gap-3"
                 >
-                  <span>Ver Características</span>
+                  <span>{t("Web-site-page.header.button-2")}</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -147,19 +147,19 @@ const WebSitePage = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">40%+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Aumento en leads</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-1")}</div>
                 </div>
                 <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">2-3s</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Tiempo de carga</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-2")}</div>
                 </div>
                 <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">100%</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Responsive</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-3")}</div>
                 </div>
                 <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">24/7</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Soporte técnico</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-4")}</div>
                 </div>
               </div>
             </div>
@@ -170,8 +170,11 @@ const WebSitePage = () => {
                 <div className="aspect-video bg-gradient-to-br from-purple-500 via-violet-500 to-purple-700 flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="text-6xl mb-4">🏢</div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Tu Empresa en Digital</h3>
-                    <p className="text-purple-100">Presencia profesional en línea</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      {t("Web-site-page.header.text-1")}</h3>
+                    <p className="text-purple-100">
+                      {t("Web-site-page.header.text-2")}
+                      </p>
                   </div>
                 </div>
                 
@@ -207,12 +210,12 @@ const WebSitePage = () => {
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
-                {t("Pages.website.featuresTitle")}
+                {t("Web-site-page.functions-section.title")}
                 
               </span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              {t("Pages.website.featuresSubtitle")}
+              {t("Web-site-page.functions-section.description")}
             </p>
           </div>
           
@@ -246,11 +249,11 @@ const WebSitePage = () => {
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
-                {t("Pages.website.processTitle")}
+                {t("Web-site-page.development-section.title")}
               </span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Un enfoque estructurado para garantizar el éxito de tu proyecto
+              {t("Web-site-page.development-section.description")}
             </p>
           </div>
           
@@ -308,10 +311,10 @@ const WebSitePage = () => {
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              ¿Listo para Elevar tu Presencia Digital?
+              {t("Web-site-page.contact-section.title")}
             </h2>
             <p className="text-lg md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-              Transforma la imagen de tu empresa con un sitio web corporativo que realmente represente tu valor
+              {t("Web-site-page.contact-section.text-1")}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -319,7 +322,9 @@ const WebSitePage = () => {
                 to="/contact"
                 className="px-8 py-4 bg-white text-purple-700 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3"
               >
-                <span>Contactar Ahora</span>
+                <span>
+                  {t("Web-site-page.contact-section.button-1")}
+                </span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -329,7 +334,9 @@ const WebSitePage = () => {
                 to="/projects"
                 className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:bg-white/10 flex items-center justify-center gap-3"
               >
-                <span>Ver Otros Servicios</span>
+                <span>
+                  {t("Web-site-page.contact-section.button-1")}
+                </span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -337,7 +344,7 @@ const WebSitePage = () => {
             </div>
             
             <div className="mt-8 text-sm opacity-75">
-              ⚡ Respuesta en menos de 24 horas • 📞 Consulta gratuita • 💼 Cotización personalizada
+              {t("Web-site-page.contact-section.text-2")}
             </div>
           </div>
         </div>
