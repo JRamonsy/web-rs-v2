@@ -13,7 +13,7 @@ import ContactPage from './pages/ContactPage';
 import { Route, Routes } from 'react-router-dom';
 import WebSitePage from './pages/WebSitePage';
 import LandingPage from './pages/LandingPage';
-import EmailMarketingPage from './pages/EmailMarketingPage';
+import EmailMPage from './pages/EmailMPage';
 import AutomationAppsPage from './pages/AutomationAppsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -54,7 +54,7 @@ const Content = () => {
 
           <Route path="/web-site" element={<WebSitePage/>} />
           <Route path="/landing-page" element={<LandingPage/>} />
-          <Route path="/email-marketing-page" element={<EmailMarketingPage/>} />
+          <Route path="/email-marketing-page" element={<EmailMPage/>} />
           <Route path="/automation-apps-page" element={<AutomationAppsPage/>} />
           <Route path="*" element={<NotFoundPage/>} />
 
