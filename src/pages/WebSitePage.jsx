@@ -246,7 +246,7 @@ const WebSitePage = () => {
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
-                Nuestro Proceso de Desarrollo
+                {t("Pages.website.processTitle")}
               </span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
