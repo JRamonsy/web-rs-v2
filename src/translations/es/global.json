@@ -1,6 +1,6 @@
 {
 	"Title": {
-		"welcome": "BIENVENIDO A"
+		"welcome": "BIENVENIDO A MI PORTAFOLIO"
 	},
 	"Presentation": {
     "line-1": "HOLA, MI NOMBRE ES",
@@ -12,22 +12,282 @@
     "line-2": "pero puedes dejarme un mensaje",
     "line-3": "y me pondré en contacto contigo lo antes posible."
   },
-  "Form": {
-    "name": "NOMBRE",
-    "email": "CORREO",
-    "subject": "ASUNTO",
-    "message": "MENSAJE",
-    "send": "ENVIAR",
-    "your-name": "tu nombre",
-    "your-email": "tu correo",
-    "your-subject": "tu asunto",
-    "your-message": "tu mensaje"
-  },
-	"WhatsApp": {
-    "line-1": "O si prefieres, envíame un mensaje por WhatsApp.",
-    "button": "Abrir WhatsApp"
-  },
   "Footer": {
-    "line-1": "MUY PRONTO!!!"
-  }
+    "Networks": "MIS REDES SOCIALES"
+  },
+  "Menu": {
+    "home": "INICIO",
+    "about": "ACERCA DE MI",
+    "projects": "SERVICIOS",
+    "contact": "CONTACTO"
+  },
+  "Btn-home": {
+    "btn-projects":  "ver mis servicios",
+    "btn-about": "acerca de mi"
+  },
+  "About-page": {
+    "title":  "ACERCA DE MI",
+    "description": "''Después de una sólida trayectoria en la industria automotriz como ingeniero de procesos y supervisor, decidí canalizar mi pasión por la innovación y tecnología como Desarrollador. Soy Juan Ramón Salas, y mi experiencia en la optimización de flujos de trabajo me da una perspectiva única para crear aplicaciones y páginas web que no solo funcionan, sino que resuelven problemas reales.''",
+    "label-1": "Desarrollo Frontend",
+    "label-2": "Desarrollo Backend",
+    "label-3": "Soluciones Full Stack",
+    "label-4": "Diseño Creativo",
+    "button-1": "Contáctame",
+    "button-2": "Descargar CV"
+  },
+  "Projects-page": {
+    "title": "MIS SERVICIOS",
+    "subtitle": "Soluciones digitales personalizadas para potenciar tu negocio"
+  },
+  "Services": {
+    "website": {
+      "title": "🌐 Sitios Web Corporativos",
+      "description": "Sitios web profesionales para empresas que necesitan presencia digital sólida con información detallada de servicios, valores corporativos y contacto directo.",
+      "features": [
+        "Diseño corporativo profesional",
+        "Multi-idioma (Español/Inglés)",
+        "Tema claro/oscuro automático",
+        "SEO optimizado para Google",
+        "Formularios de contacto inteligentes",
+        "Integración con Google Maps"
+      ]
+    },
+    "landing": {
+      "title": "🚀 Landing Pages de Alto Impacto",
+      "description": "Páginas de aterrizaje diseñadas para convertir visitantes en clientes. Perfectas para emprendedores y pequeños negocios.",
+      "features": [
+        "Panel de control para administrar ofertas",
+        "Sistema de autenticación seguro",
+        "Optimización máxima para conversiones",
+        "Carga ultra rápida (< 2s)",
+        "Estadísticas de conversión en tiempo real",
+        "Gestión de contenido fácil (CMS básico)"
+      ]
+    },
+    "cards": {
+      "title": "💳 Tarjetas Digitales Interactivas",
+      "description": "Tu presentación profesional en formato digital. Comparte tus datos de contacto de manera moderna e innovadora.",
+      "features": [
+        "Animaciones fluidas y atractivas",
+        "Código QR personalizado",
+        "Compartir con un solo clic",
+        "Diseño 100% responsivo",
+        "Estadísticas de visualizaciones",
+        "Actualización en tiempo real"
+      ]
+    },
+    "email": {
+      "title": "📧 Campañas de Email Marketing",
+      "description": "Campañas de correo electrónico que capturan atención y generan conversiones. Automatización inteligente de comunicación.",
+      "features": [
+        "Templates responsive probados",
+        "Automatización de flujos de email",
+        "Segmentación de audiencias",
+        "Análisis detallado de aperturas/clics",
+        "Integración con CRM",
+        "A/B testing incorporado"
+      ]
+    },
+    "automation": {
+      "title": "📊 Apps de Gestión y Automatización",
+      "description": "Digitaliza y automatiza los procesos de tu empresa. Elimina el papeleo y obtén control total con dashboards intuitivos.",
+      "features": [
+        "Dashboard con gráficas interactivas",
+        "Reportes automáticos personalizados",
+        "Flujos de trabajo automatizados",
+        "Notificaciones en tiempo real",
+        "Control de permisos por roles",
+        "Backup automático de datos"
+      ]
+    }
+  },
+  "Tech": {
+    "react": "React.js",
+    "next": "Next.js",
+    "tailwind": "Tailwind CSS",
+    "chartjs": "Chart.js",
+    "neon": "Neon DB",
+    "postgresql": "PostgreSQL",
+    "node": "Node.js",
+    "api": "API Integration",
+    "html5": "HTML5",
+    "css3": "CSS3",
+    "javascript": "JavaScript",
+    "animations": "Animaciones CSS/JS",
+    "cloudinary": "Cloudinary",
+    "clerk": "Clerk Auth",
+    "resend": "Resend",
+    "n8n": "n8n",
+    "reactEmail": "React Email",
+    "qr": "QR Generator",
+    "seo": "SEO",
+    "seoAdvanced": "SEO Avanzado",
+    "responsive": "Responsive",
+    "responsiveDesign": "Diseño Responsivo",
+    "i18n": "i18n",
+    "darkMode": "Dark Mode",
+    "analytics": "Analytics"
+  },
+  "Buttons": {
+    "viewDetails": "Ver Detalles",
+    "seeDemo": "Ver Demo",
+    "contact": "Contactar",
+    "learnMore": "Saber Más"
+  },
+  "Common": {
+    "featuresTitle": "Características Principales",
+    "technologies": "Tecnologías Utilizadas",
+    "viewProject": "Ver Proyecto",
+    "available": "Disponible",
+    "inDevelopment": "En Desarrollo"
+  },
+  "Projects-button": {
+    "title": "PROYECTOS"
+  },
+  "About-button": {
+    "title": "ACERCA DE MI"
+  },
+  "Contact-page": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad",
+    "alternative-title": "Otras formas de contacto",
+    "Form": {
+      "name": "NOMBRE",
+      "email": "CORREO",
+      "subject": "ASUNTO",
+      "message": "MENSAJE",
+      "send": "ENVIAR",
+      "your-name": "tu nombre",
+      "your-email": "tu correo",
+      "your-subject": "tu asunto",
+      "your-message": "tu mensaje",
+      "sending": "Enviando..."
+    },
+    "WhatsApp": {
+      "title": "Chat Directo",
+      "line-1": "O si prefieres, envíame un mensaje por WhatsApp.",
+      "button": "Abrir WhatsApp"
+    },
+    "Email-direct": {
+      "title": "Email Directo",
+      "line-1": "Envíame un correo directamente",
+      "button": "ramon.salaspi1.1@gmail.com"
+    }
+  },
+
+  "Pages": {
+      "website": {
+        "title": "🌐 Sitios Web Corporativos",
+        "heroTitle": "Sitios Web que Convierten",
+        "heroDescription": "Sitios web profesionales para empresas que necesitan presencia digital sólida con información detallada de servicios, valores corporativos y contacto directo.",
+        "featuresTitle": "Características Premium",
+        "featuresSubtitle": "Todo lo que necesitas para una presencia digital corporativa de alto nivel",
+        "processTitle": "Nuestro Proceso de Desarrollo",
+        "processSubtitle": "Un enfoque estructurado para garantizar el éxito de tu proyecto",
+        "ctaTitle": "¿Listo para Elevar tu Presencia Digital?",
+        "ctaDescription": "Transforma la imagen de tu empresa con un sitio web corporativo que realmente represente tu valor"
+      },
+      "landing": {
+        "title": "🚀 Landing Pages de Alto Impacto",
+        "heroTitle": "Landing Pages que Convierten",
+        "heroDescription": "Páginas de aterrizaje diseñadas específicamente para convertir visitantes en clientes. Perfectas para emprendedores y pequeños negocios que buscan resultados inmediatos.",
+        "featuresTitle": "Todo lo que Necesitas para Vender Más",
+        "featuresSubtitle": "Características diseñadas específicamente para maximizar tus conversiones",
+        "ctaTitle": "¿Listo para Multiplicar tus Ventas?",
+        "ctaDescription": "Tu competencia ya está usando landing pages efectivas. No te quedes atrás."
+      },
+      "email": {
+        "title": "📧 Campañas de Email Marketing",
+        "heroTitle": "Email Marketing que Conecta",
+        "heroDescription": "Campañas de correo electrónico que no solo llegan a la bandeja de entrada, sino que capturan atención, generan confianza y aumentan conversiones.",
+        "featuresTitle": "Automatización Inteligente de Email",
+        "featuresSubtitle": "Más allá del envío masivo: estrategias personalizadas que construyen relaciones",
+        "ctaTitle": "Convierte Suscriptores en Clientes Leales",
+        "ctaDescription": "El email marketing tiene el mejor ROI de todas las estrategias digitales. ¿Estás aprovechando todo su potencial?"
+      },
+      "automation": {
+        "title": "📊 Apps de Gestión y Automatización",
+        "heroTitle": "Digitaliza tu Empresa",
+        "heroDescription": "Aplicaciones personalizadas que eliminan el papeleo, automatizan procesos y te dan control total sobre tu negocio con dashboards intuitivos.",
+        "featuresTitle": "Características de Nivel Empresarial",
+        "featuresSubtitle": "Todo lo que necesitas para operar eficientemente en la era digital",
+        "useCasesTitle": "Soluciones para Todo Tipo de Negocios",
+        "ctaTitle": "¿Listo para la Transformación Digital?",
+        "ctaDescription": "Deja atrás los procesos manuales y lleva tu empresa al siguiente nivel con automatización inteligente"
+      },
+      "notfound": {
+        "title": "404 - Página no encontrada",
+        "mainTitle": "¡Ups! Página no encontrada",
+        "description": "La página que estás buscando podría haber sido eliminada, haber cambiado de nombre o no estar disponible temporalmente.",
+        "homeSuggestion": "Ir al Inicio",
+        "homeDescription": "Regresa a la página principal",
+        "contactSuggestion": "Contactar Soporte",
+        "contactDescription": "Reporta este problema",
+        "backSuggestion": "Volver Atrás",
+        "backDescription": "Regresa a la página anterior",
+        "searchPlaceholder": "¿Qué estás buscando?",
+        "quickLinks": "Enlaces que podrían interesarte:",
+        "buttons": {
+          "home": "Ir al Inicio",
+          "back": "Volver Atrás",
+          "contact": "Contactar",
+          "search": "Buscar"
+        }
+      }
+    },
+    "Common-2": {
+      "stats": {
+        "leadsIncrease": "Aumento en leads",
+        "loadTime": "Tiempo de carga",
+        "responsive": "Responsive",
+        "support": "Soporte técnico",
+        "deliveryRate": "Tasa de entrega",
+        "openRate": "Apertura promedio",
+        "clickRate": "Tasa de clics",
+        "conversionRate": "Conversión promedio",
+        "errorReduction": "Reducción de errores",
+        "timeSaved": "Tiempo ahorrado",
+        "availability": "Disponibilidad",
+        "noPaperwork": "Papeleo físico"
+      },
+      "buttons": {
+        "getQuote": "Solicitar Cotización",
+        "viewFeatures": "Ver Características",
+        "createProject": "Crear mi Landing Page",
+        "seeExamples": "Ver Casos de Éxito",
+        "boostMarketing": "Potenciar mi Email Marketing",
+        "viewCampaigns": "Ver Ejemplos de Campañas",
+        "automateBusiness": "Automatizar mi Negocio",
+        "seeDemo": "Demo Interactiva",
+        "startProject": "Empezar Proyecto",
+        "freeConsultation": "Consulta Gratuita",
+        "personalizedStrategy": "Estrategia Personalizada",
+        "freeAudit": "Auditoría Gratuita",
+        "processAnalysis": "Análisis de Procesos Gratuito",
+        "viewPlans": "Ver Planes y Precios"
+      },
+      "badges": {
+        "corporateSolution": "SOLUCIÓN CORPORATIVA",
+        "forEntrepreneurs": "PARA EMPRENDEDORES",
+        "digitalMarketing": "MARKETING DIGITAL",
+        "businessAutomation": "AUTOMATIZACIÓN EMPRESARIAL"
+      },
+      "benefits": {
+        "salesIncrease": "Aumenta ventas hasta un 300%",
+        "costReduction": "Reduce costos de marketing",
+        "audienceTargeting": "Segmentación precisa de audiencia",
+        "clearMetrics": "Métricas claras de ROI"
+      },
+      "guarantees": {
+        "delivery": "Entrega en 7-10 días",
+        "mobileFirst": "Diseño móvil primero",
+        "conversionGuarantee": "Garantía de conversión",
+        "roi": "ROI promedio 42:1",
+        "automation": "Automatización 24/7",
+        "customDesign": "Diseño personalizado",
+        "implementation": "Implementación en 4-6 semanas",
+        "prioritySupport": "Soporte prioritario",
+        "freeUpdates": "Actualizaciones gratuitas por 1 año"
+      }
+    }
 }

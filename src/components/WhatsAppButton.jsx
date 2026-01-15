@@ -16,7 +16,7 @@ const openWhatsApp = () => {
         onClick={openWhatsApp}
         className="bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-green-600"
       >
-        {t("WhatsApp.button")}      
+        {t("Contact-page.WhatsApp.button")}      
       </button>
     );
   };

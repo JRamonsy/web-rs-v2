@@ -1,0 +1,355 @@
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+// import { motion } from "framer-motion"; 
+// Si usas Framer Motion, si no lo quitas
+
+const WebSitePage = () => {
+  const { t } = useTranslation("global");
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  // Características de los sitios web corporativos
+  const features = [
+    {
+      icon: "🌍",
+      title: t("Services.website.features.0", "Diseño corporativo profesional"),
+      description: "Imagen moderna que refleja la seriedad y confiabilidad de tu empresa"
+    },
+    {
+      icon: "🗣️",
+      title: t("Services.website.features.1", "Multi-idioma (Español/Inglés)"),
+      description: "Expande tu mercado atrayendo clientes internacionales"
+    },
+    {
+      icon: "🌙",
+      title: t("Services.website.features.2", "Tema claro/oscuro automático"),
+      description: "Experiencia visual óptima según las preferencias del usuario"
+    },
+    {
+      icon: "🔍",
+      title: t("Services.website.features.3", "SEO optimizado para Google"),
+      description: "Aparece en los primeros resultados de búsqueda"
+    },
+    {
+      icon: "📞",
+      title: t("Services.website.features.4", "Formularios de contacto inteligentes"),
+      description: "Captura leads calificados automáticamente"
+    },
+    {
+      icon: "📍",
+      title: t("Services.website.features.5", "Integración con Google Maps"),
+      description: "Clientes te encuentran fácilmente"
+    }
+  ];
+
+  // Proceso de desarrollo
+  const developmentProcess = [
+    {
+      step: "1",
+      title: "Análisis y Estrategia",
+      description: "Entendemos tus objetivos y audiencia para crear la estrategia perfecta"
+    },
+    {
+      step: "2",
+      title: "Diseño Personalizado",
+      description: "Creamos un diseño único que refleje la identidad de tu marca"
+    },
+    {
+      step: "3",
+      title: "Desarrollo Técnico",
+      description: "Implementamos las mejores tecnologías para rendimiento óptimo"
+    },
+    {
+      step: "4",
+      title: "Optimización SEO",
+      description: "Preparamos tu sitio para destacar en motores de búsqueda"
+    },
+    {
+      step: "5",
+      title: "Lanzamiento y Soporte",
+      description: "Desplegamos tu sitio y ofrecemos mantenimiento continuo"
+    }
+  ];
+
+  return (
+    <div 
+      ref={sectionRef}
+      className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-[#0a0a0a] dark:to-gray-900 text-gray-900 dark:text-white transition-colors duration-300 overflow-hidden"
+    >
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className={`flex flex-col lg:flex-row items-center gap-12 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            
+            {/* Contenido Principal */}
+            <div className="lg:w-1/2">
+              <span className="inline-block px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 font-semibold text-sm mb-6">
+               {t("Pages.website.title")}
+              </span>
+              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
+                  {t("Pages.website.heroTitle")}
+                </span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                {t("Pages.website.heroDescription")}
+              </p>
+              
+              <div className="flex flex-wrap gap-4 mb-10">
+                <Link 
+                  to="/contact"
+                  className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg flex items-center gap-3"
+                >
+                  <span>Solicitar Cotización</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </Link>
+                
+                <a 
+                  href="#features"
+                  className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-purple-500 dark:border-purple-400 text-purple-600 dark:text-purple-300 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center gap-3"
+                >
+                  <span>Ver Características</span>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+              </div>
+              
+              {/* Estadísticas */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
+                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">40%+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Aumento en leads</div>
+                </div>
+                <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
+                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">2-3s</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Tiempo de carga</div>
+                </div>
+                <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
+                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">100%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Responsive</div>
+                </div>
+                <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
+                  <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">24/7</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Soporte técnico</div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Imagen/Ilustración */}
+            <div className="lg:w-1/2 relative">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <div className="aspect-video bg-gradient-to-br from-purple-500 via-violet-500 to-purple-700 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="text-6xl mb-4">🏢</div>
+                    <h3 className="text-2xl font-bold text-white mb-2">Tu Empresa en Digital</h3>
+                    <p className="text-purple-100">Presencia profesional en línea</p>
+                  </div>
+                </div>
+                
+                {/* Elementos decorativos */}
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl"></div>
+                <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-violet-400/20 rounded-full blur-2xl"></div>
+              </div>
+              
+              {/* Badges de tecnologías */}
+              <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl border border-gray-200 dark:border-gray-700">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">⚛️</span>
+                  <span className="font-semibold">React.js</span>
+                </div>
+              </div>
+              
+              <div className="absolute -top-6 -right-6 bg-white dark:bg-gray-800 rounded-2xl p-4 shadow-xl border border-gray-200 dark:border-gray-700">
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">🌀</span>
+                  <span className="font-semibold">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50/50 dark:bg-gray-900/50">
+        <div className="max-w-7xl mx-auto">
+          <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
+                {t("Pages.website.featuresTitle")}
+                
+              </span>
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              {t("Pages.website.featuresSubtitle")}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div 
+                key={index}
+                className={`bg-white dark:bg-gray-800 rounded-2xl p-6 border-2 border-transparent hover:border-purple-500 dark:hover:border-purple-400 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className={`text-center mb-16 transition-all duration-1000 delay-500 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-purple-600 to-violet-600 dark:from-purple-400 dark:to-violet-400 bg-clip-text text-transparent">
+                Nuestro Proceso de Desarrollo
+              </span>
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Un enfoque estructurado para garantizar el éxito de tu proyecto
+            </p>
+          </div>
+          
+          <div className="relative">
+            {/* Línea de tiempo */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-purple-500 to-violet-500 hidden lg:block"></div>
+            
+            <div className="space-y-12 lg:space-y-0">
+              {developmentProcess.map((step, index) => (
+                <div 
+                  key={index}
+                  className={`flex flex-col lg:flex-row items-center gap-8 ${
+                    index % 2 === 0 ? 'lg:flex-row-reverse' : ''
+                  } transition-all duration-700 ${
+                    isVisible ? 'opacity-100 translate-x-0' : index % 2 === 0 ? 'opacity-0 -translate-x-10' : 'opacity-0 translate-x-10'
+                  }`}
+                  style={{ transitionDelay: `${index * 200}ms` }}
+                >
+                  {/* Punto en la línea de tiempo */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-white dark:border-gray-900 z-10 hidden lg:block"></div>
+                  
+                  {/* Contenido */}
+                  <div className={`lg:w-5/12 ${index % 2 === 0 ? 'lg:text-right' : ''}`}>
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-700">
+                      <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+                        {step.step}
+                      </div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Espaciador */}
+                  <div className="lg:w-2/12 hidden lg:block"></div>
+                  
+                  {/* Step Number (solo móvil) */}
+                  <div className="lg:hidden flex items-center justify-center w-12 h-12 bg-purple-600 text-white rounded-full text-xl font-bold">
+                    {step.step}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 md:px-8 lg:px-16">
+        <div className="max-w-5xl mx-auto">
+          <div className={`bg-gradient-to-r from-purple-600 to-violet-700 rounded-3xl p-8 md:p-12 text-center text-white transition-all duration-1000 delay-700 ${
+            isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          }`}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              ¿Listo para Elevar tu Presencia Digital?
+            </h2>
+            <p className="text-lg md:text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+              Transforma la imagen de tu empresa con un sitio web corporativo que realmente represente tu valor
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                to="/contact"
+                className="px-8 py-4 bg-white text-purple-700 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3"
+              >
+                <span>Contactar Ahora</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </Link>
+              
+              <Link 
+                to="/projects"
+                className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:bg-white/10 flex items-center justify-center gap-3"
+              >
+                <span>Ver Otros Servicios</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            
+            <div className="mt-8 text-sm opacity-75">
+              ⚡ Respuesta en menos de 24 horas • 📞 Consulta gratuita • 💼 Cotización personalizada
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Efectos de fondo */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 -left-20 w-60 h-60 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-violet-300 dark:bg-violet-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-10 animate-float animation-delay-2000"></div>
+      </div>
+    </div>
+  );
+};
+
+export default WebSitePage;
