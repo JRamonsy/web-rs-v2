@@ -8,9 +8,11 @@ import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 const NavBar = () => {
   const { darkMode, setDarkMode } = useDarkMode();
-  const [t, i18n] = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isChangingLanguage, setIsChangingLanguage] = useState(false);
+  const [currentFlag, setCurrentFlag] = useState("🇲🇽");
   const location = useLocation();
 
   useEffect(() => {
@@ -21,9 +23,40 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleLanguage = () => {
+  useEffect(() => {
+    // Actualizar bandera según idioma
+    setCurrentFlag(i18n.language === "es" ? "🇲🇽" : "🇺🇸");
+  }, [i18n.language]);
+
+  const toggleLanguage = async () => {
+    if (isChangingLanguage) return;
+    
+    setIsChangingLanguage(true);
+    
+    // Cambiar bandera inmediatamente para feedback visual
+    setCurrentFlag(i18n.language === "es" ? "🇺🇸" : "🇲🇽");
+    
+    // Animación de pulso
+    const button = document.querySelector("#language-btn");
+    if (button) {
+      button.classList.add("animate-pulse");
+    }
+    
+    // Pequeño delay para la animación
+    await new Promise(resolve => setTimeout(resolve, 300));
+    
+    // Cambiar idioma
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
+    
+    // Pequeño delay después del cambio
+    await new Promise(resolve => setTimeout(resolve, 200));
+    
+    // Quitar animación y estado
+    if (button) {
+      button.classList.remove("animate-pulse");
+    }
+    setIsChangingLanguage(false);
   };
 
   const isActiveLink = (path) => {
@@ -73,12 +106,55 @@ const NavBar = () => {
         {/* Controls */}
         <div className="flex items-center gap-4">
           
-          {/* Language Toggle */}
+          {/* Language Toggle - MEJORADO */}
           <button
+            id="language-btn"
             onClick={toggleLanguage}
-            className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold px-4 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg"
+            disabled={isChangingLanguage}
+            className={`
+              relative overflow-hidden
+              bg-gradient-to-r from-blue-500 to-purple-500 
+              hover:from-blue-600 hover:to-purple-600 
+              text-white font-semibold px-4 py-2 rounded-2xl 
+              transition-all duration-300 transform hover:scale-105 
+              hover:shadow-2xl shadow-lg
+              flex items-center justify-center gap-2
+              min-w-[70px]
+              ${isChangingLanguage ? "cursor-wait opacity-80" : ""}
+            `}
           >
-            {i18n.language === "es" ? "EN" : "ES"}
+            {/* Indicador de cambio */}
+            {isChangingLanguage && (
+              <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+            )}
+            
+            {/* Banderas animadas */}
+            <span className={`text-xl transition-all duration-300 ${
+              isChangingLanguage ? "scale-125" : "scale-100"
+            }`}>
+              {currentFlag}
+            </span>
+            
+            {/* Texto con transición */}
+            <span className="relative">
+              <span className={`block transition-all duration-300 ${
+                isChangingLanguage ? "opacity-0 -translate-y-2" : "opacity-100 translate-y-0"
+              }`}>
+                {i18n.language === "es" ? "EN" : "ES"}
+              </span>
+              
+              {/* Texto que aparece durante la transición */}
+              <span className={`absolute left-0 top-0 transition-all duration-300 ${
+                isChangingLanguage ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+              }`}>
+                {i18n.language === "es" ? "..." : "..."}
+              </span>
+            </span>
+            
+            {/* Spinner durante el cambio */}
+            {isChangingLanguage && (
+              <div className="ml-1 w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+            )}
           </button>
 
           {/* Dark Mode Toggle */}
@@ -152,6 +228,35 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+
+          {/* Controles en móvil */}
+          <div className="flex gap-4 mt-12">
+            <button
+              onClick={toggleLanguage}
+              disabled={isChangingLanguage}
+              className={`
+                bg-gradient-to-r from-blue-500 to-purple-500 
+                text-white font-semibold px-6 py-3 rounded-2xl 
+                transition-all duration-300 transform hover:scale-105 
+                hover:shadow-2xl shadow-lg
+                flex items-center gap-2
+                ${isChangingLanguage ? "cursor-wait opacity-80" : ""}
+              `}
+            >
+              <span className="text-xl">{currentFlag}</span>
+              <span>{i18n.language === "es" ? "English" : "Español"}</span>
+              {isChangingLanguage && (
+                <div className="ml-2 w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+              )}
+            </button>
+
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="bg-gradient-to-r from-gray-600 to-gray-700 dark:from-yellow-400 dark:to-orange-400 text-white dark:text-gray-800 font-bold px-6 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg"
+            >
+              {darkMode ? "☀️ Light" : "🌙 Dark"}
+            </button>
+          </div>
 
           {/* Social Links in Mobile Menu */}
           <div className="flex gap-8 mt-16">

@@ -335,7 +335,7 @@ const WebSitePage = () => {
                 className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:bg-white/10 flex items-center justify-center gap-3"
               >
                 <span>
-                  {t("Web-site-page.contact-section.button-1")}
+                  {t("Web-site-page.contact-section.button-2")}
                 </span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

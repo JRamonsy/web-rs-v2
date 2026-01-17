@@ -16,6 +16,7 @@ import LandingPage from './pages/LandingPage';
 import EmailMPage from './pages/EmailMPage';
 import AutomationAppsPage from './pages/AutomationAppsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import LanguageTransition from './components/LanguageTransition';
 
 const Content = () => {
   const { darkMode } = useDarkMode();
@@ -40,6 +41,7 @@ const Content = () => {
 
   return (
     <div className=' flex flex-col min-h-screen w-full dark:bg-[#242424] dark:text-white relative '>
+      <LanguageTransition />
 
       <NavBar />
 
