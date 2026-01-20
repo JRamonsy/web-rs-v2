@@ -42,8 +42,8 @@ const LanguageTransition = () => {
       
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="text-center">
-          <div className="text-6xl mb-4 animate-bounce">
-            {i18n.language === 'es' ? '🇲🇽' : '🇺🇸'}
+          <div className="text-6xl mb-4 animate-bounce text-white">
+            {i18n.language === 'es' ? 'ESPAÑOL' : 'ENGLISH'}
           </div>
           <div className="text-white font-bold text-xl mb-2">
             {i18n.language === 'es' ? 'Cambiando Idioma...' : 'changing language...'}

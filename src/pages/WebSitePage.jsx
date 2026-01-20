@@ -121,7 +121,7 @@ const WebSitePage = () => {
                 {t("Web-site-page.header.description")}
               </p>
               
-              <div className="flex flex-wrap gap-4 mb-10">
+              <div className="flex justify-center gap-4 mb-10">
                 <Link 
                   to="/contact"
                   className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg flex items-center gap-3"
@@ -132,7 +132,7 @@ const WebSitePage = () => {
                   </svg>
                 </Link>
                 
-                <a 
+                {/* <a 
                   href="#features"
                   className="px-8 py-4 bg-white dark:bg-gray-800 border-2 border-purple-500 dark:border-purple-400 text-purple-600 dark:text-purple-300 font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center gap-3"
                 >
@@ -140,11 +140,11 @@ const WebSitePage = () => {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </a>
+                </a> */}
               </div>
               
               {/* Estadísticas */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-3 md:grid-cols-3 gap-6">
                 <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">40%+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-1")}</div>
@@ -157,10 +157,10 @@ const WebSitePage = () => {
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">100%</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-3")}</div>
                 </div>
-                <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
+                {/* <div className="text-center p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">24/7</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">{t("Web-site-page.header.label-4")}</div>
-                </div>
+                </div> */}
               </div>
             </div>
             
@@ -205,7 +205,7 @@ const WebSitePage = () => {
       {/* Features Section */}
       <section id="features" className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50/50 dark:bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <div className={`text-center mb-16 transition-all duration-1000 delay-300 ${
+          <div className={`flex flex-col items-center text-center mb-16 transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -244,7 +244,7 @@ const WebSitePage = () => {
       {/* Process Section */}
       <section className="py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <div className={`text-center mb-16 transition-all duration-1000 delay-500 ${
+          <div className={`flex flex-col items-center text-center mb-16 transition-all duration-1000 delay-500 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
