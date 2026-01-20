@@ -219,5 +219,39 @@
       "button-2": "View Other Services",
       "text-2": "⚡ Response in less than 24 hours • 📞 Free consultation • 💼 Personalized quote"
     }
+  },
+  "Landing-page": {
+    "header": {
+      "little-title": "🚀 FOR ENTREPRENEURS",
+      "title": "Landing Pages That Convert",
+      "description": "Landing pages specifically designed to convert visitors into customers. Perfect for entrepreneurs and small businesses looking for immediate results.",
+      "button-1": "Create my Landing Page",
+      "card-1": "Increase your sales.",
+      "card-2": "Reduce marketing costs.",
+      "card-3": "Precise audience segmentation.",
+      "text": "Increase sales"
+    },
+    "body": {
+      "title": "Everything You Need to Sell More",
+      "description": "Features specifically designed to maximize your conversions.",
+      "card-1-title": "Intuitive Control Panel",
+      "card-1-description": "Easily manage your offers, update prices, and handle promotions.",
+      "card-2-title": "Ultra-Fast Loading (< 2s)",
+      "card-2-description": "Optimized to avoid losing visitors due to slow loading times.",
+      "card-3-title": "Real-Time Conversion Analysis",
+      "card-3-description": "See what works and optimize instantly.",
+      "card-4-title": "Secure Authentication System",
+      "card-4-description": "Protected access for administrators and clients.",
+      "card-5-title": "Live Updates",
+      "card-5-description": "Change content without the need for programmers.",
+      "card-6-title": "100% Responsive Design",
+      "card-6-description": "Perfect for mobile phones, tablets, and computers"
+    },
+    "contact-section": {
+      "title": "Ready to Multiply Your Sales?",
+      "text-1": "Your competition is already using effective landing pages. Don't get left behind",
+      "button-1": "Start Project",
+      "text-2": "⚡ Delivery in 5-7 days • 📱 Mobile-first design • 🎯 Offer or Service Management Training"
+    }
   }
 }

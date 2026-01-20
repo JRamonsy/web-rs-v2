@@ -170,9 +170,9 @@ const WebSitePage = () => {
                 <div className="aspect-video bg-gradient-to-br from-purple-500 via-violet-500 to-purple-700 flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="text-6xl mb-4">🏢</div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className="text-4xl font-bold text-white mb-2">
                       {t("Web-site-page.header.text-1")}</h3>
-                    <p className="text-purple-100">
+                    <p className="text-purple-100 text-2xl">
                       {t("Web-site-page.header.text-2")}
                       </p>
                   </div>

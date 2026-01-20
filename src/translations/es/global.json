@@ -1,8 +1,8 @@
 {
-	"Title": {
-		"welcome": "BIENVENIDO A MI PORTAFOLIO"
-	},
-	"Presentation": {
+  "Title": {
+    "welcome": "BIENVENIDO A MI PORTAFOLIO"
+  },
+  "Presentation": {
     "line-1": "HOLA, MI NOMBRE ES",
     "line-3": "SOY INGENIERO INDUSTRIAL &",
     "line-4": "DESARROLLADOR FULL-STACK"
@@ -22,11 +22,11 @@
     "contact": "CONTACTO"
   },
   "Btn-home": {
-    "btn-projects":  "ver mis servicios",
+    "btn-projects": "ver mis servicios",
     "btn-about": "acerca de mi"
   },
   "About-page": {
-    "title":  "ACERCA DE MI",
+    "title": "ACERCA DE MI",
     "description": "''Después de una sólida trayectoria en la industria automotriz como ingeniero de procesos y supervisor, decidí canalizar mi pasión por la innovación y tecnología como Desarrollador. Soy Juan Ramón Salas, y mi experiencia en la optimización de flujos de trabajo me da una perspectiva única para crear aplicaciones y páginas web que no solo funcionan, sino que resuelven problemas reales.''",
     "label-1": "Desarrollo Frontend",
     "label-2": "Desarrollo Backend",
@@ -35,7 +35,7 @@
     "button-1": "Contáctame",
     "button-2": "Descargar CV"
   },
-"Projects-page": {
+  "Projects-page": {
     "title": "MIS SERVICIOS",
     "subtitle": "Soluciones digitales personalizadas para potenciar tu negocio"
   },
@@ -218,6 +218,40 @@
       "button-1": "Contactar Ahora",
       "button-2": "Ver Otros Servicios",
       "text-2": "⚡ Respuesta en menos de 24 horas • 📞 Consulta gratuita • 💼 Cotización personalizada"
+    }
+  },
+  "Landing-page": {
+    "header": {
+      "little-title": "🚀 PARA EMPRENDEDORES",
+      "title": "Landing Pages que Convierten",
+      "description": "Páginas de aterrizaje diseñadas específicamente para convertir visitantes en clientes. Perfectas para emprendedores y pequeños negocios que buscan resultados inmediatos.",
+      "button-1": "Crear mi Landing page",
+      "card-1": "Aumenta tus ventas.",
+      "card-2": "Reduce costos de marketing.",
+      "card-3": "Segmentación precisa de audiencia.",
+      "text": "Aumenta las ventas"
+    },
+    "body": {
+      "title": "Todo lo que Necesitas para Vender Más",
+      "description": "Características diseñadas específicamente para maximizar tus conversiones.",
+      "card-1-title": "Panel de Control Intuitivo",
+      "card-1-description": "Administra tus ofertas, actualiza precios y gestiona promociones fácilmente.",
+      "card-2-title": "Carga Ultra Rápida (< 2s)",
+      "card-2-description": "Optimizada para no perder visitantes por lentitud.",
+      "card-3-title": "Análisis de Conversión en Tiempo Real",
+      "card-3-description": "Ve qué funciona y optimiza al instante.",
+      "card-4-title": "Sistema de Autenticación Seguro",
+      "card-4-description": "Acceso protegido para administradores y clientes.",
+      "card-5-title": "Actualización en Vivo",
+      "card-5-description": "Cambia contenido sin necesidad de programadores.",
+      "card-6-title": "Diseño 100% Responsivo",
+      "card-6-description": "Perfecta en móviles, tablets y computadoras."
+    },
+    "contact-section": {
+      "title": "¿Listo para Multiplicar tus Ventas?",
+      "text-1": "Tu competencia ya está usando landing pages efectivas. No te quedes atrás.",
+      "button-1": "Empezar Proyecto",
+      "text-2": "⚡ Entrega en 5-7 días • 📱 Diseño móvil primero • 🎯 Capacitación de Gestion Ofertas o Servicios"
     }
   }
 }
