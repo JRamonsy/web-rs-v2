@@ -316,31 +316,27 @@ const ProjectsPage = () => {
         {/* Vista Previa del Servicio - Lado Derecho */}
         <div 
           ref={previewRef}
-          className={`w-full xl:w-3/5 transition-all duration-1000 delay-300  ${
+          className={`w-full xl:w-3/5 transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           } ${
             isSticky ? 'xl:sticky xl:top-28 xl:self-start' : ''
           }`}
-         
         >
           <div className="relative group">
-
-            {/* Contenedor de la preview */}
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 group-hover:shadow-3xl ">
-
-              {/* Imagen del servicio */}
+            
+            {/* Contenedor de la preview - DIFERENTE PARA MOBILE Y DESKTOP */}
+            <div className="relative xl:overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 group-hover:shadow-3xl xl:h-auto">
+              
+              {/* Imagen del servicio - SOLO EN DESKTOP */}
               <div
-                className="w-full h-[300px] sm:h-[350px] md:h-[400px] xl:h-[450px] bg-cover bg-center transition-all duration-700 transform group-hover:scale-105"
+                className="hidden xl:block w-full h-[450px] bg-cover bg-center transition-all duration-700 transform group-hover:scale-105"
                 style={{
                   backgroundImage: `url(${activeService?.image || '/imgs/service-default.jpg'})`
                 }}
               />
-
-              {/* Overlay con gradiente - MEJORADO para mostrar contenido */}
-              <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent transition-all duration-500`} />
-
-              {/* Contenido overlay - REORGANIZADO para mejor visibilidad */}
-              <div className="absolute inset-0 p-4 md:p-6 lg:p-8 text-white flex flex-col justify-between">
+              
+              {/* Contenido principal - DISEÑO HÍBRIDO */}
+              <div className="xl:absolute xl:inset-0 p-4 sm:p-6 xl:p-8 text-white xl:flex xl:flex-col xl:justify-between bg-gradient-to-br from-gray-800 to-gray-900 xl:bg-gradient-to-t xl:from-black/95 xl:via-black/60 xl:to-transparent rounded-3xl">
                 
                 {/* Contenido superior */}
                 <div>
@@ -355,15 +351,15 @@ const ProjectsPage = () => {
                   </h3>
 
                   {/* Descripción */}
-                  <p className="text-lg opacity-90 mb-4 max-w-2xl">
+                  <p className="text-lg opacity-90 mb-4">
                     {activeService?.description}
                   </p>
                 </div>
 
-                {/* Contenido inferior - optimizado para viewport */}
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 md:p-4 lg:p-6 mt-3 md:mt-4">
+                {/* Contenido inferior - optimizado para ambos modos */}
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 md:p-6 mt-4 xl:mt-6">
                   
-                  {/* Características principales - scroll interno si es necesario */}
+                  {/* Características principales */}
                   <div className="mb-4 md:mb-6">
                     <h4 className="font-semibold mb-3 text-cyan-200 flex items-center gap-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -372,21 +368,19 @@ const ProjectsPage = () => {
                       Características principales
                     </h4>
                     
-                    {/* Grid ajustado con scroll interno si hay muchas características */}
-                    <div className="">
-                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                        {activeService?.features.slice(0, 6).map((feature, index) => (
-                          <li key={index} className="flex items-start gap-2 opacity-90 hover:opacity-100 transition-opacity py-1">
-                            <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                            <span className="text-xs md:text-sm lg:text-base">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {/* Grid ajustado */}
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                      {activeService?.features.slice(0, 6).map((feature, index) => (
+                        <li key={index} className="flex items-start gap-2 opacity-90 hover:opacity-100 transition-opacity py-1">
+                          <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-1.5 flex-shrink-0"></span>
+                          <span className="text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   {/* Botón de acción - siempre visible */}
-                  <div className="pt-2 border-t border-white/20">
+                  <div className="pt-4 border-t border-white/20">
                     {(() => {
                       // 1. Si tiene RUTA INTERNA
                       if (activeService?.internalRoute && activeService.internalRoute !== "#") {
@@ -455,16 +449,22 @@ const ProjectsPage = () => {
               </div>
             </div>
 
-            {/* Efectos decorativos */}
-            <div className={`absolute -inset-4 bg-gradient-to-r ${activeService?.color} rounded-[35px] opacity-20 group-hover:opacity-30 blur-xl transition-all duration-500 -z-10`} />
-
-            <div className={`absolute -bottom-6 -right-6 w-24 h-24 ${activeService?.bgColor} rounded-full opacity-10 group-hover:opacity-20 transition-all duration-500`} />
-            <div className={`absolute -top-6 -left-6 w-16 h-16 ${activeService?.bgColor} rounded-full opacity-10 group-hover:opacity-20 transition-all duration-500`} />
+            {/* Efectos decorativos - FUNCIONAN EN AMBOS MODOS */}
+            {/* Efecto de brillo detrás de la card - siempre visible */}
+            <div className={`absolute -inset-4 bg-gradient-to-r ${activeService?.color} rounded-[35px] opacity-20 group-hover:opacity-30 blur-xl transition-all duration-500 -z-10 hidden xl:block`} />
+            
+            {/* Círculos de luz - siempre visibles pero con opacidad diferente */}
+            <div className={`absolute -bottom-4 -right-4 w-16 h-16 md:w-20 md:h-20 xl:w-24 xl:h-24 ${activeService?.bgColor} rounded-full opacity-5 xl:opacity-10 group-hover:opacity-15 xl:group-hover:opacity-20 transition-all duration-500`} />
+            <div className={`absolute -top-4 -left-4 w-12 h-12 md:w-14 md:h-14 xl:w-16 xl:h-16 ${activeService?.bgColor} rounded-full opacity-5 xl:opacity-10 group-hover:opacity-15 xl:group-hover:opacity-20 transition-all duration-500`} />
+            
+            {/* Efectos adicionales solo para desktop */}
+            <div className={`hidden xl:block absolute -bottom-8 -right-8 w-32 h-32 ${activeService?.bgColor} rounded-full opacity-5 group-hover:opacity-10 transition-all duration-700`} />
+            <div className={`hidden xl:block absolute -top-8 -left-8 w-24 h-24 ${activeService?.bgColor} rounded-full opacity-5 group-hover:opacity-10 transition-all duration-700`} />
           </div>
         </div>
       </div>
 
-      {/* Efectos de fondo decorativos */}
+      {/* Efectos de fondo decorativos globales */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-20 w-60 h-60 bg-cyan-300 dark:bg-cyan-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-10 animate-float" />
         <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-10 animate-float animation-delay-2000" />
