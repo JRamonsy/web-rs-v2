@@ -316,7 +316,7 @@ const ProjectsPage = () => {
         {/* Vista Previa del Servicio - Lado Derecho */}
         <div 
           ref={previewRef}
-          className={`w-full xl:w-3/5 transition-all duration-1000 delay-300 ${
+          className={`w-full xl:w-3/5 transition-all duration-1000 delay-300  ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           } ${
             isSticky ? 'xl:sticky xl:top-28 xl:self-start' : ''
@@ -326,11 +326,11 @@ const ProjectsPage = () => {
           <div className="relative group">
 
             {/* Contenedor de la preview */}
-            <div className="relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 group-hover:shadow-3xl">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl transition-all duration-500 group-hover:shadow-3xl ">
 
               {/* Imagen del servicio */}
               <div
-                className="w-full h-[350px] md:h-[400px] xl:h-[450px] bg-cover bg-center transition-all duration-700 transform group-hover:scale-105"
+                className="w-full h-[300px] sm:h-[350px] md:h-[400px] xl:h-[450px] bg-cover bg-center transition-all duration-700 transform group-hover:scale-105"
                 style={{
                   backgroundImage: `url(${activeService?.image || '/imgs/service-default.jpg'})`
                 }}
@@ -340,7 +340,7 @@ const ProjectsPage = () => {
               <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent transition-all duration-500`} />
 
               {/* Contenido overlay - REORGANIZADO para mejor visibilidad */}
-              <div className="absolute inset-0 p-6 md:p-8 text-white flex flex-col justify-between">
+              <div className="absolute inset-0 p-4 md:p-6 lg:p-8 text-white flex flex-col justify-between">
                 
                 {/* Contenido superior */}
                 <div>
@@ -361,7 +361,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Contenido inferior - optimizado para viewport */}
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 md:p-6 mt-4">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 md:p-4 lg:p-6 mt-3 md:mt-4">
                   
                   {/* Características principales - scroll interno si es necesario */}
                   <div className="mb-4 md:mb-6">
@@ -378,7 +378,7 @@ const ProjectsPage = () => {
                         {activeService?.features.slice(0, 6).map((feature, index) => (
                           <li key={index} className="flex items-start gap-2 opacity-90 hover:opacity-100 transition-opacity py-1">
                             <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                            <span className="text-sm md:text-base">{feature}</span>
+                            <span className="text-xs md:text-sm lg:text-base">{feature}</span>
                           </li>
                         ))}
                       </ul>
