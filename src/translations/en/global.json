@@ -77,15 +77,15 @@
       ]
     },
     "email": {
-      "title": "📧 Email Marketing Campaigns",
-      "description": "Email campaigns that capture attention and generate conversions. Intelligent communication automation.",
+      "title": "📧 Email & WhatsApp Marketing",
+      "description": "Reach your customers where they pay the most attention: their email and WhatsApp. Campaigns that generate real sales and build lasting relationships.",
       "features": [
-        "Tested responsive templates",
-        "Email flow automation",
-        "Audience segmentation",
-        "Detailed open/click analysis",
-        "CRM integration",
-        "Built-in A/B testing"
+        "Professional Email Templates",
+        "Intelligent Email Automation",
+        "Automatic WhatsApp Messages",
+        "Easy-to-Understand Reports",
+        "Email + WhatsApp Integration",
+        "24/7 Chatbots for Customer Service"
       ]
     },
     "automation": {
@@ -252,6 +252,62 @@
       "text-1": "Your competition is already using effective landing pages. Don't get left behind",
       "button-1": "Start Project",
       "text-2": "⚡ Delivery in 5-7 days • 📱 Mobile-first design • 🎯 Offer or Service Management Training"
+    }
+  },
+  "Marketing": {
+    "header": {
+      "little-tittle": "DIGITAL MARKETING",
+      "tittle": "Email & WhatsApp Marketing",
+      "description": "Reach your customers directly where they focus their attention most: their email and WhatsApp. Campaigns that generate real sales and build lasting relationships.",
+      "button": "I want to boost my business",
+      "card-1": "Up to 5x more conversions than social media",
+      "card-2": "Direct communication with your customers",
+      "card-3": "Works on all devices",
+      "card-4": "Save time with automation",
+      "text-1": "Perfect Combination",
+      "text-2": "Email + WhatsApp = More reach to potential customers",
+      "label-1": "Email Delivery",
+      "label-2": "WhatsApp Open Rate"
+    },
+    "email-section": {
+      "tittle": "Professional Email Marketing",
+      "description": "The most effective channel for recurring sales and building trust with your audience",
+      "title-card-1": "Professional Email Templates",
+      "description-card-1": "Attractive designs that look perfect on phones, tablets, and computers",
+      "title-card-2": "Email Automation",
+      "description-card-2": "Send automated emails to your customers based on their actions",
+      "title-card-3": "Simple Segmentation",
+      "description-card-3": "Send different messages to new, frequent, or inactive customers",
+      "title-card-4": "WhatsApp Integration",
+      "description-card-4": "Know which customers respond and which need follow-up"
+    },
+    "whatsapp-section": {
+      "tittle": "WhatsApp Marketing",
+      "description": "The most used app in Mexico for immediate and personalized communication",
+      "tittle-card-1": "Automated WhatsApp Messages",
+      "description-card-1": "Send reminders, promotions, and follow-ups automatically",
+      "tittle-card-2": "WhatsApp Templates",
+      "description-card-2": "Pre-approved messages for sales, support, and engagemen",
+      "tittle-card-3": "Intelligent Chatbots",
+      "description-card-3": "Answer frequently asked questions 24/7 without human intervention",
+      "tittle-card-4": "Conversation Tracking",
+      "description-card-4": "Knows which customers respond and which need follow-up"
+    },
+    "mix-section": {
+      "tittle": "Why combine Email and WhatsApp?",
+      "tittle-card-1": "Email",
+      "description-card-1": "Ideal for detailed content, newsletters, and long-term follow-up",
+      "tittle-card-2": "WhatsApp",
+      "description-card-2": "Perfect for urgent messages, flash promotions, and customer service",
+      "tittle-card-3": "Combined",
+      "description-card-3": "Maximize your reach to offer products or services"
+    },
+    "contact-section": {
+      "tittle": "Ready to Transform Your Communication?",
+      "text-1": "9 out of 10 Mexicans check WhatsApp daily. Combine it with email marketing and take your sales to the next level.",
+      "button-1": "Contact me",
+      "button-2": "See other services",
+      "text-2": "🚀 Results in 30 days • 📱 WhatsApp + Email • 💰 Guaranteed sales increase"
     }
   }
 }
