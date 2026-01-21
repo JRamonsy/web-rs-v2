@@ -309,5 +309,57 @@
       "button-2": "ver otros servicios",
       "text-2": "🚀 Resultados en 30 días • 📱 WhatsApp + Email • 💰 Aumento de ventas garantizado"
     }
+  },
+  "Automation-app": {
+    "header": {
+      "little-tittle": "AUTOMATIZACIÓN EMPRESARIAL",
+      "tittle": "Digitaliza tu Empresa",
+      "description": "Aplicaciones personalizadas que eliminan el papeleo, automatizan procesos y te dan control total sobre tu negocio con dashboards intuitivos.",
+      "button": "Automatizar mi Negocio",
+      "card-1": "Reducción de errores",
+      "card-2-tittle": "-horas",
+      "card-2": "Tiempo ahorrado",
+      "card-3": "Disponibilidad",
+      "card-4": "Papeleo físico",
+      "text-1": "Todo en una sola plataforma",
+      "label-1": "Dashboard",
+      "label-2": "Alertas",
+      "label-3": "Reportes",
+      "label-4": "Equipo"
+    },
+    "solution-section": {
+      "tittle": "Soluciones para Todo Tipo de Negocios",
+      "tittle-card-1": "Gestión de Inventarios",
+      "description-card-1": "Control automático de stock",
+      "tittle-card-2": "CRM Empresarial",
+      "description-card-2": "Seguimiento de clientes y ventas",
+      "tittle-card-3": "Sistema de Tickets",
+      "description-card-3": "Gestión de soporte y consultas",
+      "tittle-card-4": "Control de Gastos",
+      "description-card-4": "Monitoreo de finanzas"
+    },
+    "characteristics-section": {
+      "tittle": "Características de Nivel Empresarial",
+      "description": "Todo lo que necesitas para operar eficientemente en la era digital",
+      "tittle-card-1": "Dashboard con Gráficas Interactivas",
+      "description-card-1": "Visualiza todos tus KPIs en tiempo real con gráficos actualizados automáticamente",
+      "tittle-card-2": "Automatización de Flujos de Trabajo",
+      "description-card-2": "Elimina tareas repetitivas y reduce errores humanos",
+      "tittle-card-3": "Notificaciones en Tiempo Real",
+      "description-cartd-3": "Alertas instantáneas para eventos críticos y oportunidades",
+      "tittle-card-4": "Control de Permisos por Roles",
+      "description-card-4": "Acceso diferenciado para administradores, empleados y clientes",
+      "tittle-card-5": "Backup Automático de Datos",
+      "description-card-5": "Tus información segura con copias automáticas diarias",
+      "tittle-card-6": "Reportes Automáticos Personalizados",
+      "description-card-6": "Genera reportes específicos programados o bajo demanda"
+    },
+    "contact-section": {
+      "tittle": "¿Listo para la Transformación Digital?",
+      "text-1": "Deja atrás los procesos manuales y lleva tu empresa al siguiente nivel con automatización inteligente",
+      "button-1": "contactame",
+      "button-2": "ver otros servicios",
+      "text-2": "🚀 Implementación personalizada • 📞 Soporte prioritario • 🔄 Actualizaciones a la par de tus procesos"
+    }
   }
 }

@@ -309,5 +309,57 @@
       "button-2": "See other services",
       "text-2": "🚀 Results in 30 days • 📱 WhatsApp + Email • 💰 Guaranteed sales increase"
     }
+  },
+  "Automation-app": {
+    "header": {
+      "little-tittle": "BUSINESS AUTOMATION",
+      "tittle": "Digitize Your Business",
+      "description": "Customized applications that eliminate paperwork, automate processes, and give you complete control over your business with intuitive dashboards.",
+      "button": "Automate My Business",
+      "card-1": "Error Reduction",
+      "card-2-tittle": "-hours",
+      "card-2": "Time Saved",
+      "card-3": "Availability",
+      "card-4": "Physical Paperwork",
+      "text-1": "All in One Platform",
+      "label-1": "Dashboard",
+      "label-2": "Alerts",
+      "label-3": "Reports",
+      "label-4": "Team"
+    },
+    "solution-section": {
+      "tittle": "Solutions for All Types of Businesses",
+      "tittle-card-1": "Inventory Management",
+      "description-card-1": "Automatic Stock Control",
+      "tittle-card-2": "Enterprise CRM",
+      "description-card-2": "Customer and Sales Tracking",
+      "tittle-card-3": "Ticketing System",
+      "description-card-3": "Support and Inquiry Management",
+      "tittle-card-4": "Expense Control",
+      "description-card-4": "Financial Monitoring"
+    },
+    "characteristics-section": {
+      "tittle": "Enterprise-Level Features",
+      "description": "Everything you need to operate efficiently in the digital age",
+      "tittle-card-1": "Dashboard with Interactive Charts",
+      "description-card-1": "View all your KPIs in real time with automatically updated charts",
+      "titlte-card-2": "Workflow Automation",
+      "description-card-2": "Eliminate repetitive tasks and reduce human erro",
+      "tittle-card-3": "Real-Time Notifications",
+      "description-card-3": "Instant alerts for critical events and opportunities",
+      "tittle-card-4": "Role-Based Permission Control",
+      "description-card-4": "Differentiated access for administrators, employees, and customers",
+      "tittle-card-5": "Automatic Data Backup",
+      "description-card-5": "Keep your information safe with automatic daily backups",
+      "tittle-card-6": "Automatic Reports Customized",
+      "description-card-6": "Generates specific reports, scheduled or on demand"
+    },
+    "contact-section": {
+      "tittle": "Ready for Digital Transformation?",
+      "text-1": "Leave manual processes behind and take your business to the next level with intelligent automation",
+      "button-1": "Contact me",
+      "button-2": "View other services",
+      "text-2": "🚀 Custom Implementation • 📞 Priority Support • 🔄 Updates that keep pace with your processes"
+    }
   }
 }
