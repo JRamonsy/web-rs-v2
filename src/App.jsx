@@ -41,7 +41,7 @@ const Content = () => {
 
   return (
     <div className=' flex flex-col min-h-screen w-full dark:bg-[#242424] dark:text-white relative '>
-      {/* <LanguageTransition /> */}
+      <LanguageTransition />
 
       <NavBar />
 
