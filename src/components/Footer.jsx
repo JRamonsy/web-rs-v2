@@ -10,33 +10,31 @@ const Footer = () => {
   const socialNetworks = [
     {
       icon: FaFacebook,
-      url: 'https://www.facebook.com/nutrijulietagdealba',
+      url: 'https://www.facebook.com/',
       color: 'from-blue-500 to-blue-600',
       hoverColor: 'hover:from-blue-600 hover:to-blue-700',
       iconColor: 'text-white'
     },
     {
       icon: FaInstagram,
-      url: 'https://www.instagram.com/nutriologa.juli/',
+      url: 'https://www.instagram.com//',
       color: 'from-pink-500 to-purple-500',
       hoverColor: 'hover:from-pink-600 hover:to-purple-600',
       iconColor: 'text-white'
     },
     {
-      icon: FaLinkedin,
-      url: 'https://mx.linkedin.com/in/julieta-garcia-de-alba-v-17533aa0',
-      color: 'from-blue-600 to-blue-700',
-      hoverColor: 'hover:from-blue-700 hover:to-blue-800',
-      iconColor: 'text-white'
-    },
-    {
       icon: TbBrandYoutubeFilled,
-      url: 'https://www.youtube.com/watch?v=jkQaS56D5Bs',
+      url: 'https://www.youtube.com/',
       color: 'from-red-500 to-red-600',
       hoverColor: 'hover:from-red-600 hover:to-red-700',
       iconColor: 'text-white'
     }
   ];
+
+  const handleClickAlert = () => {
+    alert(t("Footer.alert"))
+
+  } 
 
   const currentYear = new Date().getFullYear();
 
@@ -58,12 +56,13 @@ const Footer = () => {
               return (
                 <a
                   key={index}
-                  href={network.url}
+                  // href={network.url}
+                  onClick={handleClickAlert}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`group relative bg-gradient-to-r ${network.color} ${network.hoverColor} w-16 h-16 md:w-20 md:h-20 rounded-3xl flex items-center justify-center transition-all duration-500 transform hover:scale-110 hover:shadow-2xl shadow-lg`}
                 >
-                  <IconComponent className={`${network.iconColor} text-2xl md:text-3xl transition-transform duration-300 group-hover:scale-110`} />
+                  <IconComponent className={`${network.iconColor} text-5xl md:text-6xl transition-transform duration-300 group-hover:scale-110`} />
                   
                   {/* Hover Effect */}
                   <div className="absolute inset-0 rounded-3xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
