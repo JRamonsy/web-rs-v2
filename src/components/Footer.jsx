@@ -48,7 +48,7 @@ const Footer = () => {
         
         {/* Social Networks Section */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-400 dark:to-green-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-400 dark:to-green-600 bg-clip-text text-transparent">
             {t("Footer.Networks")}
           </h2>
           
@@ -110,7 +110,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Gradient Bar */}
-      <div className="w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500" />
+      <div className="w-full h-2 bg-gradient-to-r from-blue-500 via-green-500 to-cyan-500" />
     </footer>
   );
 };

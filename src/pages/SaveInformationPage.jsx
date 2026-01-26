@@ -97,6 +97,17 @@ const SaveInformationPage = () => {
       Elige el tono: Escoge la opción que mejor refleje tu personalidad. Si quieres sonar más formal, ve con la opción 1; si buscas conectar con tu historia personal, usa la opción 2; y si quieres centrarte en el valor que aportas, la opción 3 es ideal.
     </h5>
 
+    {/* Banderas animadas  */}
+
+    <span className={`
+            text-xl transition-all duration-300 
+            ${
+              isChangingLanguage ? "scale-125" : "scale-100"
+            }
+            `}>
+              {/* {currentFlag} */}
+            </span>
+
     </div>
   )
 }

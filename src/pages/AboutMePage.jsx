@@ -68,12 +68,12 @@ const AboutMePage = () => {
           
           <div className="flex flex-col items-center xl:items-start text-center xl:text-left">
             {/* Título con gradiente */}
-            <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent mb-6">
+            <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-600 to-green-500 dark:from-blue-400 dark:to-green-400 bg-clip-text text-transparent mb-6">
               {t("About-page.title")}
             </h1>
 
             {/* Línea divisora animada */}
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-8 transform origin-left transition-all duration-500 hover:scale-x-150" />
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mb-8 transform origin-left transition-all duration-500 hover:scale-x-150" />
 
             {/* Descripción con mejor tipografía */}
             <blockquote className="text-lg md:text-xl xl:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8 italic font-light relative">

@@ -58,10 +58,10 @@ const ContactPage = () => {
         
         {/* Header del Formulario */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent mb-4">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-blue-600 to-green-500 dark:from-blue-400 dark:to-green-400 bg-clip-text text-transparent mb-4">
             {t("Contact-page.title")}
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-6 transform transition-all duration-500 hover:scale-x-150" />
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-red-500 rounded-full mx-auto mb-6 transform transition-all duration-500 hover:scale-x-150" />
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             {t("Contact-page.subtitle")}
           </p>
