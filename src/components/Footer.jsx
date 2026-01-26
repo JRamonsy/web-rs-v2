@@ -1,8 +1,9 @@
-import React from 'react';
+
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [t] = useTranslation("global");
@@ -79,8 +80,13 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-left">
               <p className="text-gray-600 dark:text-gray-400 font-medium">
-                © {currentYear} Ramón Salas. {t("Footer.rights", "Todos los derechos reservados.")}
+                © {currentYear} Ramón Salas. 
               </p>
+              <Link to="/terms">
+                <p className="hover:text-slate-500">
+                  {t("Footer.text-1")}
+                </p>
+              </Link>
             </div>
 
             {/* Quick Links */}
@@ -99,9 +105,12 @@ const Footer = () => {
             {/* Made With Love */}
             <div className="text-center md:text-right">
               <p className="text-gray-600 dark:text-gray-400 font-medium flex items-center gap-2 justify-center md:justify-end">
-                {t("Footer.madeWith", "Hecho por: ")} 
-                {/* <span className="text-red-500 animate-pulse">❤️</span>  */}
-                {t("Footer.by", "Ramón Salas")}
+                {t("Footer.text-2")} 
+                <Link to="/about" >
+                  <p className="hover:text-slate-500" >
+                    Ramón Salas
+                  </p>
+                </Link>
               </p>
             </div>
           </div>

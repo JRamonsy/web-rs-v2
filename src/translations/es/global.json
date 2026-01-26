@@ -1,6 +1,6 @@
 {
   "Title": {
-    "welcome": "BIENVENIDO A MI PORTAFOLIO"
+    "welcome": "BIENVENID@ A MI SITIO WEB"
   },
   "Presentation": {
     "line-1": "HOLA, MI NOMBRE ES",
@@ -14,6 +14,8 @@
   },
   "Footer": {
     "Networks": "REDES SOCIALES",
+    "text-1": "Todos los derechos reservados.",
+    "text-2": "Hecho por: ",
     "alert": "Proximamente!!! ¡¡¡Mantente al pendiente!!!"
   },
   "Menu": {
@@ -143,7 +145,7 @@
     "inDevelopment": "En Desarrollo"
   },
   "Projects-button": {
-    "title": "PROYECTOS"
+    "title": "MIS SERVICIOS"
   },
   "About-button": {
     "title": "ACERCA DE MI"

@@ -17,6 +17,7 @@ import EmailMPage from './pages/EmailMPage';
 import AutomationAppsPage from './pages/AutomationAppsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import LanguageTransition from './components/LanguageTransition';
+import TermsPage from './pages/TermsPage';
 
 const Content = () => {
   const { darkMode } = useDarkMode();
@@ -58,6 +59,8 @@ const Content = () => {
           <Route path="/landing-page" element={<LandingPage/>} />
           <Route path="/email-marketing-page" element={<EmailMPage/>} />
           <Route path="/automation-apps-page" element={<AutomationAppsPage/>} />
+
+          <Route path="/terms" element={<TermsPage/>} />
           <Route path="*" element={<NotFoundPage/>} />
 
         </Routes>

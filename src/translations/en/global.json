@@ -1,6 +1,6 @@
 {
   "Title": {
-    "welcome": "WELCOME TO PORTFOLIO"
+    "welcome": "WELCOME TO MY WEBSITE"
   },
   "Presentation": {
     "line-1": "HEY, MY NAME IS",
@@ -14,6 +14,8 @@
   },
   "Footer": {
     "Networks": "SOCIAL NETWORKS",
+    "text-1": "All rights reserved.",
+    "text-2": "Made by: ",
     "alert": "Coming soon!!! Stay tuned!!!"
   },
   "Menu": {
@@ -143,7 +145,7 @@
     "inDevelopment": "In Development"
   },
   "Projects-button": {
-    "title": "PROJECTS"
+    "title": "MY SERVICES"
   },
   "About-button": {
     "title": "ABOUT ME"
