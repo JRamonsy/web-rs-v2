@@ -12,7 +12,7 @@ const NavBar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isChangingLanguage, setIsChangingLanguage] = useState(false);
-  const [currentFlag, setCurrentFlag] = useState("🇲🇽");
+  // const [currentFlag, setCurrentFlag] = useState("🇲🇽");
   const location = useLocation();
 
   useEffect(() => {
@@ -23,10 +23,10 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    // Actualizar bandera según idioma
-    setCurrentFlag(i18n.language === "es" ? "🇲🇽" : "🇺🇸");
-  }, [i18n.language]);
+  // useEffect(() => {
+  //   // Actualizar bandera según idioma
+  //   setCurrentFlag(i18n.language === "es" ? "🇲🇽" : "🇺🇸");
+  // }, [i18n.language]);
 
   const toggleLanguage = async () => {
     if (isChangingLanguage) return;
@@ -34,7 +34,7 @@ const NavBar = () => {
     setIsChangingLanguage(true);
     
     // Cambiar bandera inmediatamente para feedback visual
-    setCurrentFlag(i18n.language === "es" ? "🇺🇸" : "🇲🇽");
+    // setCurrentFlag(i18n.language === "es" ? "🇺🇸" : "🇲🇽");
     
     // Animación de pulso
     const button = document.querySelector("#language-btn");
@@ -132,7 +132,7 @@ const NavBar = () => {
             <span className={`text-xl transition-all duration-300 ${
               isChangingLanguage ? "scale-125" : "scale-100"
             }`}>
-              {currentFlag}
+              {/* {currentFlag} */}
             </span>
             
             {/* Texto con transición */}
@@ -243,7 +243,9 @@ const NavBar = () => {
                 ${isChangingLanguage ? "cursor-wait opacity-80" : ""}
               `}
             >
-              <span className="text-xl">{currentFlag}</span>
+              <span className="text-xl">
+                {/* {currentFlag} */}
+                </span>
               <span>{i18n.language === "es" ? "English" : "Español"}</span>
               {isChangingLanguage && (
                 <div className="ml-2 w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
