@@ -71,7 +71,7 @@ export const HomePage = () => {
       <div className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center px-4">
         
         {/* Logo Section con animaciones */}
-        <div className={`w-full flex justify-center mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 mt-20' : 'opacity-0 -translate-y-10'
+        <div className={`w-full flex justify-center mb-3 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 mt-20' : 'opacity-0 -translate-y-10'
           }`}>
           <div className="relative">
             <div className="w-full h-[300px] md:h-[400px] flex justify-center items-center">
