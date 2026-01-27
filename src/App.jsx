@@ -18,6 +18,7 @@ import AutomationAppsPage from './pages/AutomationAppsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import LanguageTransition from './components/LanguageTransition';
 import TermsPage from './pages/TermsPage';
+import ScrollToTop from './components/ScrollToTop';
 
 const Content = () => {
   const { darkMode } = useDarkMode();
@@ -43,7 +44,7 @@ const Content = () => {
   return (
     <div className=' flex flex-col min-h-screen w-full dark:bg-[#242424] dark:text-white relative '>
       <LanguageTransition />
-
+      <ScrollToTop />
       <NavBar />
 
         <main className="flex-1 w-full flex flex-col items-center justify-start z-10">
