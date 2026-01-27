@@ -364,5 +364,96 @@
       "button-2": "ver otros servicios",
       "text-2": "🚀 Implementación personalizada • 📞 Soporte prioritario • 🔄 Actualizaciones a la par de tus procesos"
     }
+  },
+  "Terms-page": {
+    "header": {
+      "title": "Términos y Condiciones",
+      "description": "Información legal importante sobre el uso de nuestros servicios y la protección de tus datos.",
+      "update": "Última actualización: "
+    },
+    "section-1": {
+      "title": "1. Aceptación de Términos",
+      "text-1": "Al acceder y utilizar los servicios de ",
+      "text-2": "Juan Ramón Salas Yañez - Desarrollador Full-Stack, ",
+      "text-3": "aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo con alguna parte, te recomendamos no utilizar nuestros servicios."
+    },
+    "section-2": {
+      "title": "2. Servicios Ofrecidos",
+      "description": "Ofrecemos los siguientes servicios digitales:",
+      "service-1-title": "Sitios Web Corporativos:",
+      "service-1-description": "Desarrollo de sitios web profesionales para empresas.",
+      "service-2-title": "Landing Pages:",
+      "service-2-description": "Páginas de alta conversión para emprendedores.",
+      "service-3-title": "Tarjetas Digitales:",
+      "service-3-description": "Presentación profesional interactiva.",
+      "service-4-title": "Email & WhatsApp Marketing:",
+      "service-4-description": "Campañas de comunicación automatizada.",
+      "service-5-title": "Apps de Gestión:",
+      "service-5-description": "Sistemas personalizados para automatización."
+    },
+    "section-3": {
+      "title": "3. Propiedad Intelectual",
+      "text-1": "Todos los derechos reservados. El contenido de este sitio web, incluyendo pero no limitado a:",
+      "card-1": {
+        "title": "Diseños y Layout",
+        "description": "Interfaz y experiencia de usuario"
+      },
+      "card-2": {
+        "title": "Código Fuente",
+        "description": "Estructura y funcionalidades"
+      },
+      "card-3": {
+        "title": "Contenido Gráfico",
+        "description": "Logos, imágenes y elementos visuales"
+      },
+      "card-4": {
+        "title": "Texto y Contenido",
+        "description": "Descriptivos y materiales escritos"
+      },
+      "text-2": "están protegidos por las leyes de propiedad intelectual. Queda prohibida su reproducción, distribución o modificación sin autorización expresa por escrito."
+    },
+    "section-4": {
+      "title": "4. Privacidad y Protección de Datos",
+      "description": "Nos comprometemos a proteger tu privacidad. Toda la información personal que nos proporciones será tratada conforme a nuestra Política de Privacidad y la Ley Federal de Protección de Datos Personales en Posesión de Particulares.",
+      "card": {
+        "title": "Tus derechos incluyen:",
+        "text-1": "Acceso a tus datos personales",
+        "text-2": "Rectificación de información",
+        "text-3": "Cancelación de uso",
+        "text-4": "Oposición al tratamiento"
+      }
+    },
+    "section-5": {
+      "title": "5. Limitación de Responsabilidad",
+      "description": "Los servicios se ofrecen 'tal cual' y según disponibilidad. No nos hacemos responsables por:",
+      "text-1": "Interrupciones temporales del servicio por mantenimiento.",
+      "text-2": "Daños indirectos o consecuenciale.s",
+      "text-3": "Uso indebido de los servicios por parte del cliente.",
+      "text-4": "Suspension o Cancelación del servicio por falta de pago."
+    },
+    "section-6": {
+      "title": "6. Modificaciones a los Términos",
+      "description": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en esta página.",
+      "card": {
+        "description": "Te notificaremos sobre cambios importantes:",
+        "text-1": "Actualización en el sitio web",
+        "text-2": "Correo electrónico",
+        "text-3": "Notificación en dashboard"
+      }
+    },
+    "contact-section": {
+      "title": "7. Contacto Legal",
+      "text-1": "Para cualquier consulta sobre estos términos o asuntos legales, puedes contactarnos a través de:",
+      "card-1": {
+        "text-1": "Correo Electrónico",
+        "text-2": "ramon.salaspi1.1@gmail.com"
+      },
+      "card-2": {
+        "text-1": "Ubicación",
+        "text-2": "San Luis Potosí, México"
+      },
+      "button": "Volver al Inicio",
+      "text-2": "Al navegar por este sitio, aceptas nuestros términos"
+    }
   }
 }
