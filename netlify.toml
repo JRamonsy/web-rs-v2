@@ -1,0 +1,22 @@
+[[redirects]]
+  from = "http://ramonsalas.com/*"
+  to = "https://www.ramonsalas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.ramonsalas.com/*"
+  to = "https://www.ramonsalas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ramonsalas.com/*"
+  to = "https://www.ramonsalas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
