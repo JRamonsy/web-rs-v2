@@ -44,9 +44,8 @@ const AboutMePage = () => {
             : 'opacity-0 translate-x-10'
         }`}>
           <div className="relative group">
-            {/* Usando la imagen importada */}
             <img 
-              src={profileImg} 
+              src="/profile.jpg" 
               alt="Ramón Salas"
               className="w-full h-[400px] md:h-[500px] xl:h-[600px] object-cover rounded-[25px] shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl"
             />
@@ -79,6 +78,24 @@ const AboutMePage = () => {
             <blockquote className="text-lg md:text-xl xl:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8 italic font-light relative">
               <span className="absolute -left-6 -top-4 text-4xl text-blue-500 dark:text-blue-400 opacity-50"></span>
               {t("About-page.description")}
+              <div className="my-2">
+                <p className="text-base font-bol  not-italic" >
+                  <strong>{t("About-page.text-1")}</strong>
+                  {t("About-page.text-1.1")}
+                </p>
+                <p className="text-base font-bol  not-italic" >
+                  <strong>{t("About-page.text-1")}</strong>
+                  {t("About-page.text-2.1")}
+                </p>
+                <p className="text-base font-bol  not-italic" >
+                  <strong>{t("About-page.text-3")}</strong>
+                  {t("About-page.text-3.1")}
+                </p>
+                <p className="text-base font-bol  not-italic" >
+                  <strong>{t("About-page.text-4")}</strong>
+                  {t("About-page.text-4.1")}
+                </p>
+              </div>
               <span className="absolute -right-4 -bottom-6 text-4xl text-purple-500 dark:text-purple-400 opacity-50"></span>
             </blockquote>
 
